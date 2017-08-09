@@ -1,0 +1,62 @@
+﻿'TetrisLearn.exe' (Win32): Loaded 'E:\Documents\Projects\TetrisLearn\TetrisLearn\x64\Debug\TetrisLearn.exe'. Symbols loaded.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'E:\Programs\Python-Anaconda\python36.dll'. Symbols loaded.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\version.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\shlwapi.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\gdi32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\user32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\lpk.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\usp10.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ws2_32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\rpcrt4.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\nsi.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\advapi32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\sechost.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-runtime-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbase.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-timezone-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-file-l2-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-localization-l1-2-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-synch-l1-2-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-processthreads-l1-1-1.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-file-l1-2-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-string-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-heap-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-stdio-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-convert-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-math-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-locale-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-time-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-environment-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-process-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-conio-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-crt-filesystem-l1-1-0.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'E:\Documents\Projects\TetrisLearn\TetrisLearn\TetrisLearn\dll\sfml-graphics-d-2.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'E:\Documents\Projects\TetrisLearn\TetrisLearn\TetrisLearn\dll\sfml-window-d-2.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'E:\Documents\Projects\TetrisLearn\TetrisLearn\TetrisLearn\dll\sfml-system-d-2.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\winmm.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\opengl32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\glu32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ddraw.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\dciman32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\setupapi.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\cfgmgr32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\oleaut32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\ole32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\devobj.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\dwmapi.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'E:\Documents\Projects\TetrisLearn\TetrisLearn\TetrisLearn\dll\ProtoEng.dll'. Symbols loaded.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\imm32.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\msctf.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\cryptsp.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\rsaenh.dll'. Cannot find or open the PDB file.
+'TetrisLearn.exe' (Win32): Loaded 'C:\Windows\System32\cryptbase.dll'. Cannot find or open the PDB file.
+The thread 0x24a0 has exited with code 0 (0x0).
+The program '[7036] TetrisLearn.exe' has exited with code 0 (0x0).

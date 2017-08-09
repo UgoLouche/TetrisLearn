@@ -1,0 +1,174 @@
+<game>
+<!-- 
+	Default values
+	Uncomment to change
+-->
+
+<!--	 
+	<window>
+		<name>TetrisLearn</name>
+		<size>
+			<width>800</width>
+			<height>600</height>
+		</size>
+	</window>
+-->	
+	<grid>
+		<size>
+			<width>3</width>
+			<height>3</height>
+		</size>
+	</grid>
+<!--	
+	<text>
+		<color type="plain">white</color>
+		<position>
+			<x>0</x>
+			<y>0</y>
+		</position>
+		<string />
+		<fontSize>10</fontSize>
+	</text>
+	
+	<UI>
+		<score> 
+			<string>Score: </string>
+			<counter>999999999999</counter>
+		</score>
+		<level>
+			<string>Level:</string>
+			<counter>999</counter>
+		</level>
+		<gameOver>
+			<string>GAME OVER !</string>
+			<color type="plain">red</color>
+		</gameOver>
+		<thumbnails>
+			<hold>
+				<string>Hold</string>
+				<color type="plain">red</color>
+			</hold>
+			<previews>
+				<string>Previews</string>
+				<color type="plain">blue</color>
+			</previews>
+			<fontSize>15</fontSize>
+		</thumbnails>
+	</UI>
+	
+	<font>
+		<size>25</size>
+		<file>arial.ttf</file>
+	</font>
+	
+	<rules>
+		<delays>
+			<lock>1000</lock>
+			<autoscroll>500</autoscroll>
+			<flash>1000</flash>
+		</delays>
+		<DAS>
+			<timer>100</timer>
+			<steptoenable>3</steptoenable>
+		</DAS>
+	</rules>
+	
+	<visual>
+		<flash>
+			<timer>100</timer>
+			<color id="A" type="RGB">
+				<red>255</red>
+				<green>0</green>
+				<blue>0</blue>
+				<alpha>255</alpha>
+			</color>
+			<color id="B" type="RGB">
+				<red>0</red>
+				<green>255</green>
+				<blue>0</blue>
+				<alpha>255</alpha>
+			</color>
+		</flash>
+		<active>
+			<color type=RGB">
+				<red>255</red>
+				<green>255</green>
+				<blue>255</blue>
+				<alpha>255</alpha>
+			</color>
+		</active>
+		<locked>
+			<color type="RGB">
+				<red>150</red>
+				<green>150</green>
+				<blue>150</blue>
+				<alpha>255</alpha>
+			</color>
+		</locked>
+		<ghost>
+			<color type="RGB">
+				<red>255</red>
+				<green>255</green>
+				<blue>255</blue>
+				<alpha>50</alpha>
+			</color>
+		</ghost>
+	</visual>
+	
+	<block>
+		<poolsize>100</poolsize>
+		<texture>BlockTexture.png</texture>
+	</block>
+	
+	<score>	
+		<line>
+			<score>1</score>
+			<multiplier>2</multiplier>
+		<line>
+		<level>
+			<multiplier>1</multiplier>
+			<speed>0.1</speed>
+			<line>20</line>
+		</level>
+	</score>
+
+	<boards>
+	
+		<board index="0">
+			<name>Default Board</name>		
+		</board>
+	
+		<board index="2">
+			<name>Index 2</name>
+			<controlscheme>
+				<keyboard>
+					<key input="Up">up</key>
+					<key input="Down">down</key>
+					<key input="Left">left</key>
+					<key input="Right">right</key>
+					<key input="LFlip">ctrl</key>
+					<key input="RFlip">alt</key>
+					<key input="Hold">space</key>
+				</keyboard>
+			</controlscheme>
+		</board>
+		
+		<board>
+			<name>default</name>
+			<recording />
+		</board>
+		
+		<board>
+			<name>half-mapped</name>
+			<controlscheme>
+				<keyboard>
+					<key input="LFlip">a</key>
+					<key input="RFlip">e</key>
+					<key input="Hold">f</key>
+				</keyboard>
+			</controlscheme>
+		</board>
+		
+	</boards>
+-->
+</game>

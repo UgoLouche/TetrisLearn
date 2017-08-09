@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Execution">
+      <UniqueIdentifier>{d3d01b29-e04b-4914-860b-8ba39bcf7adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Execution">
+      <UniqueIdentifier>{d6b01ac5-1cf3-4eeb-a0e4-3858084e6b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Definitions">
+      <UniqueIdentifier>{113f9164-5acd-4fd5-a228-6a64b488a802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay">
+      <UniqueIdentifier>{df7caebb-8b3f-4269-94fd-a6ff697bd179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Board">
+      <UniqueIdentifier>{ac7f8b51-79ca-41a4-9d4a-fa8c91145472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay">
+      <UniqueIdentifier>{27cbe4da-9f7e-4bc5-ba21-d2c07b068db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Board">
+      <UniqueIdentifier>{0257973d-0f92-4db9-af1d-cd7a1d0ed573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Board\Interfaces">
+      <UniqueIdentifier>{51ec4c05-8714-44db-91a1-0662e3073e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Board\Impl">
+      <UniqueIdentifier>{21bb56a3-9d4a-49c5-9190-d3a5552ae6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Board\Impl">
+      <UniqueIdentifier>{d006cd6e-ed05-4278-b273-795f6cc9e13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Board\Interfaces">
+      <UniqueIdentifier>{720af9a1-7c7d-4887-9e22-769bd81d5db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Blocks">
+      <UniqueIdentifier>{d05ea5b7-1f74-44c9-b6b7-fbc2b9feacdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Blocks\Interfaces">
+      <UniqueIdentifier>{5ad4ff87-f6a2-4782-924b-8dc8ba8a3fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Blocks">
+      <UniqueIdentifier>{24759085-d327-4d0a-8d4e-75b096ae8667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Blocks\Interfaces">
+      <UniqueIdentifier>{dafe6fa6-7bed-4745-8010-30183c3fbab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Tetramino">
+      <UniqueIdentifier>{5e11acc0-3795-4647-b14a-cc9cf0d15719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Tetramino\Interfaces">
+      <UniqueIdentifier>{5935a084-18a0-4561-b894-258cb4f88a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Tetramino\Impl">
+      <UniqueIdentifier>{f8767aa5-2981-42b6-be33-7a16892df24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Tetramino">
+      <UniqueIdentifier>{8cb8cf5b-3c19-4ab4-9937-64fe871dedbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Tetramino\Interfaces">
+      <UniqueIdentifier>{25d0f014-aa2c-44af-874d-be6f33074fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Tetramino\Impl">
+      <UniqueIdentifier>{a013fa01-806e-4d80-a4a8-a656d13f28df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Definitions">
+      <UniqueIdentifier>{2aaf19bc-283e-4c23-9089-fe5992996800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Blocks\Impl">
+      <UniqueIdentifier>{faf842ff-0ba0-4cf0-97b3-fc786cbbcfc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Blocks\impl">
+      <UniqueIdentifier>{213fa838-ed2b-449f-ac3d-30221dadac9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Controllers">
+      <UniqueIdentifier>{4e3af01b-4848-4a0a-93f5-c940ea8f1292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataStructure">
+      <UniqueIdentifier>{d3df6dcb-86b9-4f77-96eb-1c2e9f4559ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Execution\Interfaces">
+      <UniqueIdentifier>{e0cf1bbd-6b4d-4bc6-8ee7-62ba38dcdc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gameplay\Controllers\Interfaces">
+      <UniqueIdentifier>{bf6944c1-a17f-4254-adfd-6d0bdcbfb7e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{68173337-0451-4b37-938c-806389934f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Controllers">
+      <UniqueIdentifier>{19d25d78-3030-49e8-915a-7c0b0da76b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gameplay\Controllers\Interfaces">
+      <UniqueIdentifier>{217ae145-abb3-4468-92f7-a3cd78a10ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Execution\interfaces">
+      <UniqueIdentifier>{38ec67dd-f386-43d7-9838-69d980ee4c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{8764a101-baaf-45bb-837e-403df8c653fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Settings">
+      <UniqueIdentifier>{a1a94f76-b0fb-4e60-9be3-edc1ab3637df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Settings\Impl">
+      <UniqueIdentifier>{a919af3e-b368-4612-916b-fc329e82b42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{ec944d7b-82ec-4440-8fb9-c11e8ea5a4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Settings\Interfaces">
+      <UniqueIdentifier>{b1f38a91-8f93-4ae8-a029-4d8c014e1ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings\Interfaces">
+      <UniqueIdentifier>{30d81d43-63c5-4c16-9c73-90d6efa9be98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings\Impl">
+      <UniqueIdentifier>{e0a38e80-0771-44c4-a1d9-9e21c37fda73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataStructure">
+      <UniqueIdentifier>{64fa32ce-2532-48e8-8f70-338173ccbd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Python">
+      <UniqueIdentifier>{10de9816-47ff-49c2-b290-8011f71a3e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Python">
+      <UniqueIdentifier>{ae333290-5c53-4e93-82dc-7be9211b7132}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Execution</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisGame.cpp">
+      <Filter>Source Files\Execution</Filter>
+    </ClCompile>
+    <ClCompile Include="IBoardUI.cpp">
+      <Filter>Source Files\Gameplay\Board\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="TetraminoManager.cpp">
+      <Filter>Source Files\Gameplay\Board\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardGrid.cpp">
+      <Filter>Source Files\Gameplay\Board\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardUIManager.cpp">
+      <Filter>Source Files\Gameplay\Board\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="IBoardContent.cpp">
+      <Filter>Source Files\Gameplay\Board\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IBoard.cpp">
+      <Filter>Source Files\Gameplay\Board\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IBoardScore.cpp">
+      <Filter>Source Files\Gameplay\Board\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IBlocksPool.cpp">
+      <Filter>Source Files\Gameplay\Blocks\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreManager.cpp">
+      <Filter>Source Files\Gameplay\Board\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ITetraminoManager.cpp">
+      <Filter>Source Files\Gameplay\Tetramino\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="enum.cpp">
+      <Filter>Source Files\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Source Files\Gameplay\Blocks\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="BlocksPool.cpp">
+      <Filter>Source Files\Gameplay\Blocks\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files\Gameplay\Board\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Gameplay\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyController.cpp">
+      <Filter>Source Files\Gameplay\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardController.cpp">
+      <Filter>Source Files\Gameplay\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Source Files\Gameplay\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="IControlledObject.cpp">
+      <Filter>Source Files\Gameplay\Controllers\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IActingObject.cpp">
+      <Filter>Source Files\Execution\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IGraphicObject.cpp">
+      <Filter>Source Files\Execution\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetramino.cpp">
+      <Filter>Source Files\Gameplay\Tetramino</Filter>
+    </ClCompile>
+    <ClCompile Include="TetraminosBag.cpp">
+      <Filter>Source Files\Gameplay\Tetramino</Filter>
+    </ClCompile>
+    <ClCompile Include="TetraminoMoves.cpp">
+      <Filter>Source Files\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="TetraThumbnail.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisLogger.cpp">
+      <Filter>Source Files\Execution</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisTimer.cpp">
+      <Filter>Source Files\Execution</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ISettingsWrapper.cpp">
+      <Filter>Source Files\Settings\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsWrapper.cpp">
+      <Filter>Source Files\Settings\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="InputData.cpp">
+      <Filter>Source Files\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="LearningController.cpp">
+      <Filter>Source Files\Gameplay\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonWrapper.cpp">
+      <Filter>Source Files\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="PyGILHandler.cpp">
+      <Filter>Source Files\Python</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TetrisGame.hpp">
+      <Filter>Header Files\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="const.hpp">
+      <Filter>Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="enum.hpp">
+      <Filter>Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="default.hpp">
+      <Filter>Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardGrid.hpp">
+      <Filter>Header Files\Gameplay\Board\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardUIManager.hpp">
+      <Filter>Header Files\Gameplay\Board\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreManager.hpp">
+      <Filter>Header Files\Gameplay\Board\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="IBoardContent.hpp">
+      <Filter>Header Files\Gameplay\Board\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBoardScore.hpp">
+      <Filter>Header Files\Gameplay\Board\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBoardUI.hpp">
+      <Filter>Header Files\Gameplay\Board\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBoard.hpp">
+      <Filter>Header Files\Gameplay\Board\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBlocksPool.hpp">
+      <Filter>Header Files\Gameplay\Blocks\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ITetraminoManager.hpp">
+      <Filter>Header Files\Gameplay\Tetramino\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="TetraminoManager.hpp">
+      <Filter>Header Files\Gameplay\Tetramino\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockPool.hpp">
+      <Filter>Header Files\Gameplay\Blocks\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.hpp">
+      <Filter>Header Files\Gameplay\Board\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.hpp">
+      <Filter>Header Files\Gameplay\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyController.hpp">
+      <Filter>Header Files\Gameplay\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumeratedArray.hpp">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.hpp">
+      <Filter>Header Files\Gameplay\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="IActingObject.hpp">
+      <Filter>Header Files\Execution\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IControlledObject.hpp">
+      <Filter>Header Files\Gameplay\Controllers\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGraphicObject.hpp">
+      <Filter>Header Files\Execution\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardController.hpp">
+      <Filter>Header Files\Gameplay\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.hpp">
+      <Filter>Header Files\Gameplay\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="PeekQueue.hpp">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetramino.hpp">
+      <Filter>Header Files\Gameplay\Tetramino</Filter>
+    </ClInclude>
+    <ClInclude Include="TetraminoMoves.hpp">
+      <Filter>Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="TetraminosBag.hpp">
+      <Filter>Header Files\Gameplay\Tetramino</Filter>
+    </ClInclude>
+    <ClInclude Include="TetraThumbnail.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisLogger.hpp">
+      <Filter>Header Files\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisTimer.hpp">
+      <Filter>Header Files\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ISettingsWrapper.hpp">
+      <Filter>Header Files\Settings\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsWrapper.hpp">
+      <Filter>Header Files\Settings\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.hpp">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="markup.hpp">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="InputData.hpp">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="LearningController.hpp">
+      <Filter>Header Files\Gameplay\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonWrapper.hpp">
+      <Filter>Header Files\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="PyGILHandler.hpp">
+      <Filter>Header Files\Python</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
