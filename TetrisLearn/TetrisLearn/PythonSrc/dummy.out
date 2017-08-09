@@ -1,0 +1,17 @@
+1499079920.4298198: dummy created
+1499079994.4110515: dummy created
+1499080100.34011: dummy created
+Total: 1: dummy Fit
+dummy #1 created at time: 1501194724.0978036
+dummy #1 created at time: 1501275299.6355731
+dummy #1 created at time: 1501275522.7333338
+Total: 1: dummy Predict
+dummy #1 created at time: 1501275642.728197
+Total: 1: dummy Predict
+dummy #1 created at time: 1501275762.963074
+Total: 1: dummy Predict
+[[ 0.  0.  0. ...,  0.  0.  0.]]dummy #1 created at time: 1501280887.5321827
+dummy #1 created at time: 1501281012.1083083
+dummy #1, fit called at time:0.06400346755981445, execution time: -2.0001142024993896 Total call:1 
+dummy #2 created at time: 1501281039.4048693
+dummy #2, fit called at time:0.06500387191772461, execution time: -2.0001144409179688 Total call:1 

@@ -43,10 +43,10 @@ PythonWrapper::~PythonWrapper()
 		delete(learningThread);
 	}
 
-	Py_DECREF(pInstance);
+Py_DECREF(pInstance);
 
-	if (--instanceCounter == 0)
-		pythonFinal();
+if (--instanceCounter == 0)
+pythonFinal();
 }
 
 float PythonWrapper::scoreMove(std::string inputStr)
@@ -56,7 +56,7 @@ float PythonWrapper::scoreMove(std::string inputStr)
 
 	GILHandler.getLock();
 
-	pFuncName = Py_BuildValue("s", PYTHON_PRED_METHOD);	
+	pFuncName = Py_BuildValue("s", PYTHON_PRED_METHOD);
 	if (pFuncName == NULL)
 	{
 		fprintf(stderr, "Error in scoreMove, function name\n");
@@ -104,7 +104,7 @@ void PythonWrapper::startLearning()
 	isLearningFlag = true;
 	keepLearning.test_and_set();
 
-	learningThread = new std::thread( [this](){ this->learning(); } );
+	learningThread = new std::thread([this]() { this->learning(); });
 }
 
 void PythonWrapper::stopLearning()
@@ -121,6 +121,39 @@ bool PythonWrapper::pythonInit()
 {
 	//Init interpreter
 	Py_Initialize();
+
+	//Import path and append custom script location
+	PyObject *sys, *path, *newEntry;
+
+	sys = PyImport_ImportModule("sys");
+	if (sys == NULL)
+	{
+		fprintf(stderr, "Failed to load \"%s\"\n", "sys");
+		Py_DECREF(sys);
+		return false;
+	}
+
+	path = PyObject_GetAttrString(sys, "path");
+	if (path == NULL)
+	{
+		fprintf(stderr, "Failed to find Attr \"%s\"\n", "path");
+		Py_DECREF(path);
+		return false;
+	}
+
+	newEntry = Py_BuildValue("s", "E:/Documents/Projects/TetrisLearn/TetrisLearn/TetrisLearn/PythonSrc"); //TODO Make this configurable.
+	if (newEntry == NULL)
+	{
+		fprintf(stderr, "Failed to build string for Path\n");
+		Py_DECREF(newEntry);
+		return false;
+	}
+
+	PyList_Append(path, newEntry);
+	
+	Py_DECREF(newEntry);
+	Py_DECREF(path);
+	Py_DECREF(sys);
 
 	PyObject *pName, *wrapperModule;
 
