@@ -204,11 +204,12 @@ bool PythonWrapper::pythonFinal()
 
 void PythonWrapper::learning()
 {
-	PyObject *pFuncName;
+	PyObject *pFuncName, *pDataFile;
+
 
 	GILHandler.getLock();
 
-	pFuncName = Py_BuildValue("s", PYTHON_FIT_METHOD);
+	pFuncName = Py_BuildValue("s", PYTHON_FIT_METHOD/*"fit"*/);
 	if (pFuncName == NULL)
 	{
 		fprintf(stderr, "Error in startLearning, function name\n");
@@ -218,15 +219,64 @@ void PythonWrapper::learning()
 		return;
 	}
 
+	pDataFile = Py_BuildValue("s", "inputData_save.raw"); //TODO put this into setting
+	if (pDataFile == NULL)
+	{
+		fprintf(stderr, "Error in startLearning, data file name\n");
+		Py_DECREF(pDataFile);
+
+		GILHandler.releaseLock();
+		return;
+	}
+
 	//Loop learning until flagged to stop
+	PyObject *pCallReturn = NULL; //See note at the end of the file.
 	while (keepLearning.test_and_set())
 	{
-		PyObject_CallMethodObjArgs(pInstance, pFuncName, NULL);
+		//Store the return value, serve as a reminder that it does return something 
+		//(and that it MUST return something, otherwise python fails to close properly at the end of the program (more in comment at the file's end)
+		pCallReturn = PyObject_CallMethodObjArgs(pInstance, pFuncName, pDataFile, NULL); 
+
+		if (pCallReturn == NULL)
+		{
+			fprintf(stderr, "Something went wrong\n");
+			Py_DECREF(pFuncName);
+			Py_DECREF(pDataFile);
+			Py_DECREF(pCallReturn);
+
+			throw new std::exception("Error in learning");
+		}
+
+		//Py_DECREF(pCallReturn);
 	}
 	keepLearning.clear();
 
 	Py_DECREF(pFuncName);
+	Py_DECREF(pDataFile);
+	Py_DECREF(pCallReturn); //Apparently DECREF here only once is OK, doing it in the loop is not.
+
 	GILHandler.releaseLock();
 	
 	isLearningFlag = false;
 }
+
+/*
+* The whole situation with PyObject_CallMethodObjArgs in the while loop is very confusing. 
+* Most likely I am missing something here, so let me write down what works and what doesn't for future references.
+*
+* The method called through PyObject_CallMethodObjArgs MUST return something, otherwise Python will crash, but only
+* when the program will try to shut down the interpreter (throw a tstate was nulllptr exception at program exit)
+*
+* The pointer returned by PyObject_CallMethodObjArgs can be safely ignored and no if no DECREF is called on it, it seems to be fine.
+*
+* Calling DECREF on the pointer within the loop (which should be the correct way to do it since PyObject_CallMethodObjArgs is supposed
+* to allocate memory) causes a crash at shutdown (tstate exception)
+*
+* Calling DECREF ONCE, after the loop is fine. 
+*
+* As far as I can tell, tstate is a shorthand for ThreadState, so this is probably related to the multithreading side of things. 
+*
+* ALthough it seems unecessary, I'll store the return value of PyObject_CallMethodObjArgs in a variable as a reminder that the method
+* MUST return a value, and that only one DECREF is needed. 
+*
+*/

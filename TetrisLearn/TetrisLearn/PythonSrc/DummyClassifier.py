@@ -37,10 +37,10 @@ class DummyClassifier:
     def predict(self, X=None):
         self.total_pred += 1
         
-        self.log("Total: {}: dummy Predict\n".format(self.total_pred))
+        #self.log("Total: {}: dummy Predict\n".format(self.total_pred))
         
-        if X != None:
-            self.log(np.array2string(X))
+        #if X != None:
+        #    self.log(np.array2string(X))
         
         return 0.0
         

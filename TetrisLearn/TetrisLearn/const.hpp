@@ -91,7 +91,7 @@
 //Python
 #define PYTHON_MODULE       "Wrapper"
 #define PYTHON_FUNC         "getWrapper"
-#define PYTHON_FIT_METHOD   "fit"
+#define PYTHON_FIT_METHOD   "fitFromFile"
 #define PYTHON_PRED_METHOD  "predictFromStr"
 
 

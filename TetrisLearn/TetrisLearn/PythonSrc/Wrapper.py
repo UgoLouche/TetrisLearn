@@ -24,6 +24,7 @@ class Wrapper(BaseEstimator, RegressorMixin):
         self.LineRead = 0
         
     def fit(self, X=None, Y=None):
+        
         self.wrapped_future.fit(X, Y)
         
         self.lock.acquire()
@@ -45,15 +46,22 @@ class Wrapper(BaseEstimator, RegressorMixin):
         
         return self.predict(d.getData(0, 1))
     
-    def fitFromFile(self, fileName):    
+    def fitFromFile(self, fileName=None):    
         #only read new lines
         if fileName != self.lastFileRead:
-            self.lineRead = 0
-            self.lastFileRead = fileName
+           self.lineRead = 0
+           self.lastFileRead = fileName
+            
+            
+        self.wrapped_future.log("Reading file \n")
         
         self.lineRead = self.lineRead  + self.persData.loadDataFromFile(fileName, skiprows=self.lineRead)
         
-        self.fit(self.persData.getData(), self.persData.getScores())
+        self.wrapped_future.log("File read \n")
+        
+        #If that doesn't return anything, the C++ side of the call will raise an exception
+        # regarding thread state (tstate) when shutting down the interpreter. Go figure.
+        return self.fit()#self.persData.getData(), self.persData.getScores())
         
 
 ### Data Wrapper   
@@ -72,7 +80,23 @@ class Data:
     
     #Load lines from file and return the number of lines read
     def loadDataFromFile(self, fileName, skiprows=0):
-        data = np.loadtxt(fileName, dtype=np.float, delimiter=",", skiprows=skiprows)
+        data = np.genfromtxt(fileName, dtype=np.float, delimiter=",", skip_header=skiprows, invalid_raise=False) #usecols=np.arange(0,266), filling_values=0)
+        
+        self.log(str(data.shape) + "\n")
+        
+        #Catch empty data (do nothing)
+        if data.shape[0] == 0:
+            return 0
+        
+        #If reading only one line, data is presented as a column vector
+        if data.ndim == 1:
+            if data.shape[0] == self.innerData.shape[1]:
+                data = np.reshape(data, self.innerData.shape)
+                
+            #Abort if some data are simply missing or bad formatted line.
+            else:
+                return 0
+        
         
         if (self.innerData==None):
             self.innerData = data
@@ -103,6 +127,11 @@ class Data:
     def rawConvert(self, str):
         #convert raw data into an npArray
         return np.reshape(np.array(str.split(",")).astype(np.float), (1,266))
+    
+    def log(self, msg):
+        out = open("dataReader.out", 'a')
+        out.write(msg)
+        out.close()
 
 #Load a module, instanciate a class of the same name (supposedely defined in that module)
 #and return a wrapper setup with that instance.  
@@ -112,5 +141,40 @@ def getWrapper(name):
     instance = class_()
     
     return Wrapper(instance)
+
+
+
+
+if __name__ == "__main__":
+    
+    w = getWrapper("DummyClassifier")
+    
+    a = w.fitFromFile("../inputData_save.raw") 
+    b = w.fitFromFile("../inputData_save.raw")
+    b = w.fitFromFile("../inputData_save.raw")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
