@@ -118,3 +118,23 @@ dummy #7, fit called at time:3.126178741455078, execution time: -2.0001144409179
 Reading file 
 File read 
 dummy #7, fit called at time:5.136293649673462, execution time: -2.0001144409179688 Total call:3 
+dummy #1 created at time: 1502723501.5253174
+Reading file 
+File read 
+dummy #1, fit called at time:0.13200736045837402, execution time: -2.0001144409179688 Total call:1 
+Reading file 
+File read 
+dummy #1, fit called at time:2.136121988296509, execution time: -2.0001144409179688 Total call:2 
+Reading file 
+File read 
+dummy #1, fit called at time:4.1382365226745605, execution time: -2.0001144409179688 Total call:3 
+dummy #1 created at time: 1502732093.583755
+Reading file 
+File read 
+dummy #1, fit called at time:0.33101892471313477, execution time: -2.0001142024993896 Total call:1 
+Reading file 
+File read 
+dummy #1, fit called at time:2.3341333866119385, execution time: -2.0001144409179688 Total call:2 
+Reading file 
+File read 
+dummy #1, fit called at time:4.336248159408569, execution time: -2.0001144409179688 Total call:3 

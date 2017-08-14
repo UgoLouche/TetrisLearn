@@ -113,7 +113,7 @@ class Data:
         if idEnd == -1:
             idEnd = self.innerData.shape[0]
         
-        return self.innerData[idStart:idEnd, 0:262]
+        return self.innerData[idStart:idEnd, 0:262].copy()
         
     
     def getScores(self, idStart=-1, idEnd=-1):
@@ -122,11 +122,30 @@ class Data:
         if idEnd == -1:
             idEnd = self.innerData.shape[0]
         
-        return self.innerData[idStart:idEnd, 262:]
+        self.cleanupIDs()
+        return self.innerData[idStart:idEnd, 262:].copy()
         
     def rawConvert(self, str):
         #convert raw data into an npArray
         return np.reshape(np.array(str.split(",")).astype(np.float), (1,266))
+    
+    #IDs are a mess and need to be cleaned up to avoid duplicate
+    #Working (reasonable) hypothesis is: maintain map Table for new ID. 
+    #Parent should always first.
+    def cleanupIDs(self):
+        mapTable = np.zeros(self.innerData.shape[0] + 1) - 1
+        nextID = 1
+        
+        for i in range(self.innerData.shape[0]):
+            #register new ID conversion info
+            mapTable[int(self.innerData[i,265])] = nextID
+            self.innerData[i,265] = nextID
+            nextID = nextID + 1
+            
+            #rewrite parent information
+            if self.innerData[i,264] != 0:
+                self.innerData[i,264] = mapTable[int(self.innerData[i,264])]
+
     
     def log(self, msg):
         out = open("dataReader.out", 'a')
