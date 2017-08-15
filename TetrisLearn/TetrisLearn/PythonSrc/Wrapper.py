@@ -23,6 +23,9 @@ class Wrapper(BaseEstimator, RegressorMixin):
         self.lastFileRead=""
         self.LineRead = 0
         
+        #Fit Flag because prediction before a first fit may lead to errors
+        self.fitted = False
+        
     def fit(self, X=None, Y=None):
         
         self.wrapped_future.fit(X, Y)
@@ -30,9 +33,18 @@ class Wrapper(BaseEstimator, RegressorMixin):
         self.lock.acquire()
         self.wrapped_usable = copy.deepcopy(self.wrapped_future)
         self.lock.release()
+        
+        if self.fitted == False:
+            self.fitted = True
+        
         return self
         
     def predict(self, X):
+        
+        #Catch cases where we predict before fit
+        if self.fitted == False:
+            return 0
+        
         self.lock.acquire()
         ret = self.wrapped_usable.predict(X)
         self.lock.release()
@@ -61,7 +73,7 @@ class Wrapper(BaseEstimator, RegressorMixin):
         
         #If that doesn't return anything, the C++ side of the call will raise an exception
         # regarding thread state (tstate) when shutting down the interpreter. Go figure.
-        return self.fit()#self.persData.getData(), self.persData.getScores())
+        return self.fit(self.persData.getData(), self.persData.getScores())
         
 
 ### Data Wrapper   

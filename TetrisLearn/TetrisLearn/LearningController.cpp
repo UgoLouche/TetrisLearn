@@ -26,7 +26,7 @@ LearningController::~LearningController()
 void LearningController::act_custom()
 {
 	//Dummy function for now, Simply make (fake) Python call and go left/right
-	static bool goLeft = true;
+	//static bool goLeft = true;
 
 	if (!pyWrapper.isLearning()) pyWrapper.startLearning();
 
@@ -85,14 +85,14 @@ InputKeys LearningController::selectBestMove()
 
 		if (it == InputKeys::UP)
 			best_score = curr_score;
-		else if (curr_score > best_score)
+		else if (curr_score >= best_score)
 		{
 			best_score = curr_score;
 			ret = it;
 		}
 
 		it++;
-	} while (it == InputKeys::UP);
+	} while (it != InputKeys::UP);
 
 	return ret;
 }

@@ -1,0 +1,4117 @@
+Example Regressor #1:  created at time 1502814862.4938657
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502815078.8472404
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502816071.9800446
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1:  created at time 1502816316.6420383
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502816380.6066968
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502816388.6801586
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502816531.4863267
+Reading file 
+File read 
+Example Regressor #1:  created at time 1502816664.5529377
+Reading file 
+File read 
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
+2
+3
+Example Regressor #1: fit time: 1.328075647354126, score time: 0.8350479602813721, acc: 0.03649682249540953
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35380019]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30390031]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27737495]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27646428]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.300182]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31787476]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.287337]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35121601]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30130876]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27479767]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27388066]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2976012]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31529616]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2847572]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.34804251]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29812658]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27163332]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27070856]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29443229]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31212981]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28158965]
+6
+7
+Example Regressor #1: fit time: 1.3270759582519531, score time: 0.842048168182373, acc: 0.03649682249540953
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.34407029]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29414409]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26767366]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26673921]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29046651]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30816702]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2776258]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33899215]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28905379]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26261338]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2616666]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28539775]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30310175]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27255988]
+6
+7
+Example Regressor #1: fit time: 1.3420765399932861, score time: 0.8460485935211182, acc: 0.03753703569149569
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32648319]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27723286]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25019754]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24874405]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2730417]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28938367]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25215924]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31763778]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2683715]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24139331]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23991912]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26421844]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28056528]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24334548]
+6
+7
+Example Regressor #1: fit time: 1.3460769653320312, score time: 0.838047981262207, acc: 0.03785647704971007
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30263426]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25269308]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2269211]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2248576]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24896366]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26533465]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22734879]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2878944]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2379522]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2122964]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21019918]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2342907]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25066155]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21270707]
+6
+7
+Example Regressor #1: fit time: 1.3550772666931152, score time: 0.8660495281219482, acc: 0.038255475224033386
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27338946]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22361664]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19836097]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19567916]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21980919]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23625538]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19810258]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26929737]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21956791]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1943819]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19169348]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21578952]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2322203]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19411612]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.49864525]
+6
+7
+Example Regressor #1: fit time: 1.3530771732330322, score time: 0.8580491542816162, acc: 0.03883375860678262
+Reading file 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.44865807]
+6
+7
+1
+2
+File read 
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.42227627]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.42007621]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.44315023]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.46009287]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.42260754]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29547829]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2467206]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22150161]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21989791]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24203104]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25912341]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22199212]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29299762]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24423267]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21902733]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21741742]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23955325]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25664788]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21951537]
+6
+7
+Example Regressor #1: fit time: 1.3640780448913574, score time: 0.8650493621826172, acc: 0.03883375860678262
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28994326]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24116969]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21598146]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21436392]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23650284]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25360014]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21646643]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28610676]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23732289]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21215661]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21052953]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23267195]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24977242]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21263768]
+6
+7
+Example Regressor #1: fit time: 1.3610777854919434, score time: 0.8700497150421143, acc: 0.03874176070153046
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27882494]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23019446]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20484896]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20352906]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22629663]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24441251]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2063685]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27236805]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22372361]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19841744]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19708155]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21985285]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23797288]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19992989]
+6
+7
+Example Regressor #1: fit time: 1.3680779933929443, score time: 0.8670496940612793, acc: 0.03700640569807945
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26233572]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21376928]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18795752]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18573067]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20822575]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2274799]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18776042]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25082733]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20224596]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17651539]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17426091]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1967553]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21601155]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17630525]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23616332]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18757848]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16196563]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15967667]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18215925]
+6
+7
+1
+2
+Example Regressor #1: fit time: 1.3790786266326904, score time: 0.8780503273010254, acc: 0.035707419091255854
+3
+4
+Reading file 
+5
+Example Regressor #1: predict call with result: [ 0.20038613]
+6
+7
+1
+2
+3
+4
+5
+File read 
+Example Regressor #1: predict call with result: [ 0.15865836]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22550303]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17959355]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15349846]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1504149]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17433051]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19256572]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1508687]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26189143]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21799815]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18929369]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18603782]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21129264]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22923661]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18747521]
+6
+7
+Example Regressor #1: fit time: 1.3830790519714355, score time: 0.8840506076812744, acc: 0.03732841451907709
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.38894988]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33859827]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31346919]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.3099163]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.3370128]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35519129]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31170014]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.38631179]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33595292]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.3108388]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30727962]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33437861]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35255911]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30906699]
+6
+7
+Example Regressor #1: fit time: 1.4050803184509277, score time: 0.8870508670806885, acc: 0.038001946366435724
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.38220676]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33365884]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30818121]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30442552]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33144896]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35241182]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30573832]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.37819681]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32963886]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30418544]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30042005]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32744625]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.34841152]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30173805]
+6
+7
+Example Regressor #1: fit time: 1.3830788135528564, score time: 0.8890509605407715, acc: 0.038001946366435724
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.37309876]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32452912]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29910744]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29532983]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32235861]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.34332648]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2966543]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.36649737]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31791448]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29253554]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28874236]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31577284]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.33674323]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29007498]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.35784366]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30924699]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28392723]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28011412]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30714364]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.32811576]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28145692]
+6
+7
+Example Regressor #1: fit time: 1.4150810241699219, score time: 0.8920509815216064, acc: 0.03710070491798789
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29732029]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2520405]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22433014]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22101296]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2505784]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27043512]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2181169]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29044465]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24516165]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21750532]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21417463]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24373012]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26358429]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21128744]
+6
+7
+Example Regressor #1: fit time: 1.406080722808838, score time: 0.8980512619018555, acc: 0.036007174972199074
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17184811]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13043402]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10099888]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10009946]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12725343]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14838188]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09685581]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18195218]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1419398]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1114271]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11046876]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13845947]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15892829]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10744688]
+6
+7
+Example Regressor #1: fit time: 1.429081916809082, score time: 0.8930509090423584, acc: 0.03647157401123824
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17389152]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13414248]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10328181]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10306239]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13082235]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15123499]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1010916]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17103545]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13127805]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10043464]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10020797]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12796972]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1483844]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09824061]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16746122]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12769376]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09687247]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09663673]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1244003]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1448173]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09467365]
+6
+7
+Example Regressor #1: fit time: 1.426081657409668, score time: 0.9090518951416016, acc: 0.03734707391547232
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16077007]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12185412]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09185186]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09041348]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11923744]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13982786]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08892775]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15478291]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11585229]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08588989]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08443696]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1132612]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13385426]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08295779]
+6
+7
+Example Regressor #1: fit time: 1.4420826435089111, score time: 0.9070518016815186, acc: 0.037643895689708384
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14401256]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10261013]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07551976]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07383515]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10190056]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12311761]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07268805]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1390652]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09765379]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07059994]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.0689027]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09696572]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11818313]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.0677613]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13336943]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09194929]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06493954]
+6
+7
+1
+Example Regressor #1: fit time: 1.430081844329834, score time: 0.9110522270202637, acc: 0.039428482167488954
+2
+3
+4
+5
+Reading file 
+Example Regressor #1: predict call with result: [ 0.06315848]
+6
+7
+1
+2
+File read 
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.0885919]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1132884]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06061375]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23621733]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19373173]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16301674]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16577436]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18978821]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21534674]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16268191]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23403149]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19153907]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16083771]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16358968]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18760474]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21316517]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16049957]
+6
+7
+Example Regressor #1: fit time: 1.444082498550415, score time: 0.9220528602600098, acc: 0.039428482167488954
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23133669]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18883612]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1581519]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16089688]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18491318]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21047578]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15780965]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22794576]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18543533]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15477321]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15750936]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18152684]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20709188]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15442575]
+6
+7
+Example Regressor #1: fit time: 1.437082290649414, score time: 0.9300532341003418, acc: 0.038726007069276314
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22057712]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17942121]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14844478]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14995452]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17471245]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19774814]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14788597]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21461526]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17344482]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14250913]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14400279]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1687613]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19179998]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14194111]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21089664]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16971784]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13880856]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14029214]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16505029]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18809037]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13823471]
+6
+7
+Example Regressor #1: fit time: 1.4550833702087402, score time: 0.9410538673400879, acc: 0.037688921431356714
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.20488107]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16784517]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1355856]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13686801]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15950494]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.18173868]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13537218]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.31214588]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27495313]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24276059]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24441274]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26719091]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28875944]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24230238]
+6
+7
+Example Regressor #1: fit time: 1.4580833911895752, score time: 0.9320533275604248, acc: 0.0382728363722058
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30854997]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27125416]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23930213]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24113796]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2628578]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28556647]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23869654]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.3052329]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26792847]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23599569]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2378229]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25954492]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28225624]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23538594]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.30110059]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26378587]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23187769]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23369414]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25541846]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2781328]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23126272]
+6
+7
+Example Regressor #1: fit time: 1.4580833911895752, score time: 0.949054479598999, acc: 0.038782202078913475
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.29461829]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25703234]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22542022]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22736157]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24850841]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.27211775]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.22487344]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28779996]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25019926]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21863086]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2205542]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.24170296]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.26531545]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21807521]
+6
+7
+Example Regressor #1: fit time: 1.4680838584899902, score time: 0.948054313659668, acc: 0.039207066306127136
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.28111691]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23953796]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21294922]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21307346]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.23452228]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.25879372]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21064431]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19844388]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15770535]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13001907]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13019697]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15212462]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17633105]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12815333]
+6
+7
+Example Regressor #1: fit time: 1.4660837650299072, score time: 0.965054988861084, acc: 0.039207066306127136
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14960467]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10859638]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08229373]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08132553]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10331432]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12791349]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07977523]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1470513]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1060364]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07974759]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07877355]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1007639]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1253652]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07722624]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14391372]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10289096]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07661943]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07563822]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09763027]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12223401]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07409457]
+6
+7
+Example Regressor #1: fit time: 1.4820847511291504, score time: 0.9460539817810059, acc: 0.04003361547106399
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13938185]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09740215]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07186138]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07094829]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09287016]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11758897]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.07042738]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13439212]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.09240158]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06688971]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06596472]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08788847]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.11261039]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06544976]
+6
+7
+Example Regressor #1: fit time: 1.4700841903686523, score time: 0.9580545425415039, acc: 0.0404801313984291
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.13013565]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.08746905]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06219068]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.06103168]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.0831005]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10785065]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.0604727]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17195706]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12934668]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10383738]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10249423]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.12457646]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1494513]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.10196721]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.2220869]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17972407]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.1529046]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15266444]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17467478]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19916325]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.15163288]
+6
+7
+Example Regressor #1: fit time: 1.4900851249694824, score time: 0.962054967880249, acc: 0.041004733167608
+Reading file 
+File read 
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.21763331]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.17506702]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14817332]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14733729]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.16937761]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.19435382]
+6
+7
+1
+2
+3
+4
+5
+Example Regressor #1: predict call with result: [ 0.14720685]
+6
+7
+Example Regressor #1: fit time: 1.4960854053497314, score time: 0.9490542411804199, acc: 0.04104670218526696
+Example Regressor #1:  created at time 1502816779.4515095
+Reading file 
+File read 
+Example Regressor #1: fit time: 1.5110864639282227, score time: 0.9790558815002441, acc: 0.042416425556249915
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.23169818]
+Example Regressor #1: predict call with result: [ 0.184672]
+Example Regressor #1: predict call with result: [ 0.15362252]
+Example Regressor #1: predict call with result: [ 0.15276162]
+Example Regressor #1: predict call with result: [ 0.17978474]
+Example Regressor #1: predict call with result: [ 0.20432526]
+Example Regressor #1: predict call with result: [ 0.14913433]
+Example Regressor #1: predict call with result: [ 0.22849962]
+Example Regressor #1: predict call with result: [ 0.18146513]
+Example Regressor #1: predict call with result: [ 0.15043325]
+Example Regressor #1: predict call with result: [ 0.14956327]
+Example Regressor #1: predict call with result: [ 0.17658988]
+Example Regressor #1: predict call with result: [ 0.20113258]
+Example Regressor #1: predict call with result: [ 0.14594118]
+Example Regressor #1: fit time: 1.5310876369476318, score time: 0.9820563793182373, acc: 0.04263080248021334
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.22221666]
+Example Regressor #1: predict call with result: [ 0.17559207]
+Example Regressor #1: predict call with result: [ 0.14488321]
+Example Regressor #1: predict call with result: [ 0.14389057]
+Example Regressor #1: predict call with result: [ 0.17116424]
+Example Regressor #1: predict call with result: [ 0.19628583]
+Example Regressor #1: predict call with result: [ 0.14033866]
+Example Regressor #1: predict call with result: [ 0.21707082]
+Example Regressor #1: predict call with result: [ 0.17043417]
+Example Regressor #1: predict call with result: [ 0.13975502]
+Example Regressor #1: predict call with result: [ 0.13874825]
+Example Regressor #1: predict call with result: [ 0.1660261]
+Example Regressor #1: predict call with result: [ 0.19115031]
+Example Regressor #1: predict call with result: [ 0.13520452]
+Example Regressor #1: predict call with result: [ 0.21033162]
+Example Regressor #1: predict call with result: [ 0.16368063]
+Example Regressor #1: predict call with result: [ 0.13304196]
+Example Regressor #1: predict call with result: [ 0.13201669]
+Example Regressor #1: predict call with result: [ 0.15929879]
+Example Regressor #1: predict call with result: [ 0.18442554]
+Example Regressor #1: predict call with result: [ 0.12848373]
+Example Regressor #1: fit time: 1.540088176727295, score time: 0.9860563278198242, acc: 0.04283997391215433
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.20073513]
+Example Regressor #1: predict call with result: [ 0.15456367]
+Example Regressor #1: predict call with result: [ 0.12351475]
+Example Regressor #1: predict call with result: [ 0.12240987]
+Example Regressor #1: predict call with result: [ 0.15007538]
+Example Regressor #1: predict call with result: [ 0.17642356]
+Example Regressor #1: predict call with result: [ 0.11932202]
+Example Regressor #1: predict call with result: [ 0.18868251]
+Example Regressor #1: predict call with result: [ 0.14249442]
+Example Regressor #1: predict call with result: [ 0.1115286]
+Example Regressor #1: predict call with result: [ 0.11039113]
+Example Regressor #1: predict call with result: [ 0.1380555]
+Example Regressor #1: predict call with result: [ 0.16440202]
+Example Regressor #1: predict call with result: [ 0.10732238]
+Example Regressor #1: fit time: 1.5370879173278809, score time: 1.0030574798583984, acc: 0.04303726447178602
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.17346611]
+Example Regressor #1: predict call with result: [ 0.1271583]
+Example Regressor #1: predict call with result: [ 0.09639035]
+Example Regressor #1: predict call with result: [ 0.09504967]
+Example Regressor #1: predict call with result: [ 0.12323334]
+Example Regressor #1: predict call with result: [ 0.15063106]
+Example Regressor #1: predict call with result: [ 0.09243214]
+Example Regressor #1: predict call with result: [ 0.15733441]
+Example Regressor #1: predict call with result: [ 0.11104743]
+Example Regressor #1: predict call with result: [ 0.08044074]
+Example Regressor #1: predict call with result: [ 0.07905475]
+Example Regressor #1: predict call with result: [ 0.10719847]
+Example Regressor #1: predict call with result: [ 0.13456403]
+Example Regressor #1: predict call with result: [ 0.07646427]
+Example Regressor #1: predict call with result: [ 0.15153831]
+Example Regressor #1: predict call with result: [ 0.10528263]
+Example Regressor #1: predict call with result: [ 0.07476087]
+Example Regressor #1: predict call with result: [ 0.07335851]
+Example Regressor #1: predict call with result: [ 0.10146697]
+Example Regressor #1: predict call with result: [ 0.12880456]
+Example Regressor #1: predict call with result: [ 0.07077814]
+Example Regressor #1: fit time: 1.558089017868042, score time: 0.9920568466186523, acc: 0.043586697941204844
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.4539301]
+Example Regressor #1: predict call with result: [ 0.40681069]
+Example Regressor #1: predict call with result: [ 0.37507297]
+Example Regressor #1: predict call with result: [ 0.37526002]
+Example Regressor #1: predict call with result: [ 0.40370516]
+Example Regressor #1: predict call with result: [ 0.43068871]
+Example Regressor #1: predict call with result: [ 0.37172605]
+Example Regressor #1: predict call with result: [ 0.2964652]
+Example Regressor #1: predict call with result: [ 0.25066958]
+Example Regressor #1: predict call with result: [ 0.21832749]
+Example Regressor #1: predict call with result: [ 0.21868752]
+Example Regressor #1: predict call with result: [ 0.24701556]
+Example Regressor #1: predict call with result: [ 0.27425988]
+Example Regressor #1: predict call with result: [ 0.21582387]
+Example Regressor #1: fit time: 1.55708909034729, score time: 0.9850561618804932, acc: 0.043586697941204844
+Example Regressor #1:  created at time 1502816852.1066651
+Reading file 
+File read 
+Example Regressor #1: fit time: 5.529316186904907, score time: 1.0040576457977295, acc: 0.04377929905658884
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.22782027]
+Example Regressor #1: predict call with result: [ 0.18518191]
+Example Regressor #1: predict call with result: [ 0.15292401]
+Example Regressor #1: predict call with result: [ 0.15073734]
+Example Regressor #1: predict call with result: [ 0.1807817]
+Example Regressor #1: predict call with result: [ 0.20998351]
+Example Regressor #1: predict call with result: [ 0.14619402]
+Example Regressor #1: predict call with result: [ 0.28011243]
+Example Regressor #1: predict call with result: [ 0.2372206]
+Example Regressor #1: predict call with result: [ 0.20519312]
+Example Regressor #1: predict call with result: [ 0.20182168]
+Example Regressor #1: predict call with result: [ 0.23321632]
+Example Regressor #1: predict call with result: [ 0.26176483]
+Example Regressor #1: predict call with result: [ 0.19771057]
+Example Regressor #1: fit time: 1.5800902843475342, score time: 1.0240585803985596, acc: 0.04365420105905349
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.077305]
+Example Regressor #1: predict call with result: [ 0.03517735]
+Example Regressor #1: predict call with result: [ 0.00318384]
+Example Regressor #1: predict call with result: [-0.00026508]
+Example Regressor #1: predict call with result: [ 0.03273917]
+Example Regressor #1: predict call with result: [ 0.05990458]
+Example Regressor #1: predict call with result: [-0.00405443]
+Example Regressor #1: predict call with result: [ 0.21533753]
+Example Regressor #1: predict call with result: [ 0.17297923]
+Example Regressor #1: predict call with result: [ 0.14084352]
+Example Regressor #1: predict call with result: [ 0.13825592]
+Example Regressor #1: predict call with result: [ 0.1702039]
+Example Regressor #1: predict call with result: [ 0.19782795]
+Example Regressor #1: predict call with result: [ 0.13378156]
+Example Regressor #1: predict call with result: [ 0.29333557]
+Example Regressor #1: predict call with result: [ 0.24996312]
+Example Regressor #1: predict call with result: [ 0.21864204]
+Example Regressor #1: predict call with result: [ 0.21543113]
+Example Regressor #1: predict call with result: [ 0.2477913]
+Example Regressor #1: predict call with result: [ 0.27518174]
+Example Regressor #1: predict call with result: [ 0.21090736]
+Example Regressor #1: fit time: 1.6120920181274414, score time: 1.0320591926574707, acc: 0.043802157075615744
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.26261727]
+Example Regressor #1: predict call with result: [ 0.21833993]
+Example Regressor #1: predict call with result: [ 0.18843774]
+Example Regressor #1: predict call with result: [ 0.18552243]
+Example Regressor #1: predict call with result: [ 0.21718868]
+Example Regressor #1: predict call with result: [ 0.2446027]
+Example Regressor #1: predict call with result: [ 0.18023965]
+Example Regressor #1: predict call with result: [ 0.21086179]
+Example Regressor #1: predict call with result: [ 0.16684699]
+Example Regressor #1: predict call with result: [ 0.13603245]
+Example Regressor #1: predict call with result: [ 0.13381721]
+Example Regressor #1: predict call with result: [ 0.16519274]
+Example Regressor #1: predict call with result: [ 0.19278013]
+Example Regressor #1: predict call with result: [ 0.12839006]
+Example Regressor #1: predict call with result: [ 0.18640229]
+Example Regressor #1: predict call with result: [ 0.14254809]
+Example Regressor #1: predict call with result: [ 0.11063574]
+Example Regressor #1: predict call with result: [ 0.10820454]
+Example Regressor #1: predict call with result: [ 0.14064838]
+Example Regressor #1: predict call with result: [ 0.1678659]
+Example Regressor #1: predict call with result: [ 0.10358581]
+Example Regressor #1: fit time: 1.6160924434661865, score time: 1.0090577602386475, acc: 0.043802157075615744
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.34312553]
+Example Regressor #1: predict call with result: [ 0.30117447]
+Example Regressor #1: predict call with result: [ 0.26864146]
+Example Regressor #1: predict call with result: [ 0.26563468]
+Example Regressor #1: predict call with result: [ 0.29823725]
+Example Regressor #1: predict call with result: [ 0.32540348]
+Example Regressor #1: predict call with result: [ 0.2612543]
+Example Regressor #1: predict call with result: [ 0.30839386]
+Example Regressor #1: predict call with result: [ 0.2651439]
+Example Regressor #1: predict call with result: [ 0.23265226]
+Example Regressor #1: predict call with result: [ 0.23110919]
+Example Regressor #1: predict call with result: [ 0.26265936]
+Example Regressor #1: predict call with result: [ 0.29027757]
+Example Regressor #1: predict call with result: [ 0.2259495]
+Example Regressor #1: fit time: 1.5930912494659424, score time: 1.0250585079193115, acc: 0.04301078190629559
+Reading file 
+File read 
+Example Regressor #1: predict call with result: [ 0.36309503]
+Example Regressor #1: predict call with result: [ 0.32693403]
+Example Regressor #1: predict call with result: [ 0.29566237]
+Example Regressor #1: predict call with result: [ 0.29239108]
+Example Regressor #1: predict call with result: [ 0.32571235]
+Example Regressor #1: predict call with result: [ 0.35115542]
+Example Regressor #1: predict call with result: [ 0.28786922]
+Example Regressor #1: predict call with result: [ 0.36181159]
+Example Regressor #1: predict call with result: [ 0.32564715]
+Example Regressor #1: predict call with result: [ 0.29438265]
+Example Regressor #1: predict call with result: [ 0.29110745]
+Example Regressor #1: predict call with result: [ 0.32443021]
+Example Regressor #1: predict call with result: [ 0.34987432]
+Example Regressor #1: predict call with result: [ 0.2865878]
+Example Regressor #1: fit time: 1.6020915508270264, score time: 0.9990572929382324, acc: 0.04303735198532255

@@ -1,12 +1,12 @@
-dummy #1 created at time: 1502565873.320465
-dummy #2 created at time: 1502565873.3224652
-dummy #3 created at time: 1502565873.3244655
-dummy #4 created at time: 1502565873.3264656
-dummy #5 created at time: 1502565873.3284657
-dummy #6 created at time: 1502565873.3304658
-dummy #7 created at time: 1502565873.332466
-dummy #8 created at time: 1502565873.3334658
-dummy #9 created at time: 1502565873.335466
+dummy #1 created at time: 1502801806.8621264
+dummy #2 created at time: 1502801806.8651266
+dummy #3 created at time: 1502801806.8681266
+dummy #4 created at time: 1502801806.8691268
+dummy #5 created at time: 1502801806.871127
+dummy #6 created at time: 1502801806.873127
+dummy #7 created at time: 1502801806.8761272
+dummy #8 created at time: 1502801806.8771274
+dummy #9 created at time: 1502801806.8791273
 Reading file 
 Reading file 
 Reading file 
@@ -25,199 +25,39 @@ File read
 File read 
 File read 
 File read 
-dummy #8, fit called at time:1.190068006515503, execution time: -2.0001144409179688 Total call:1 
-dummy #6, fit called at time:1.193068027496338, execution time: -2.0001144409179688 Total call:1 
+dummy #2, fit called at time:1.675095796585083, execution time: -2.0001144409179688 Total call:1 
 Reading file 
+dummy #7, fit called at time:1.670095443725586, execution time: -2.005114793777466 Total call:1 
 Reading file 
-dummy #3, fit called at time:1.204068660736084, execution time: -2.0011143684387207 Total call:1 
-dummy #7, fit called at time:1.196068286895752, execution time: -2.0011143684387207 Total call:1 
-dummy #2, fit called at time:1.206068992614746, execution time: -2.0011143684387207 Total call:1 
-dummy #1, fit called at time:1.209069013595581, execution time: -2.0011143684387207 Total call:1 
-Reading file 
-File read 
-Reading file 
-Reading file 
-Reading file 
-dummy #9, fit called at time:1.193068265914917, execution time: -2.010114908218384 Total call:1 
-Reading file 
-dummy #5, fit called at time:1.20106840133667, execution time: -2.009114980697632 Total call:1 
-dummy #4, fit called at time:1.202068567276001, execution time: -2.0011143684387207 Total call:1 
-Reading file 
-Reading file 
-File read 
-File read 
-File read 
-File read 
-File read 
-File read 
-File read 
-File read 
-dummy #6, fit called at time:3.220184087753296, execution time: -2.0001144409179688 Total call:2 
-Reading file 
-File read 
-dummy #8, fit called at time:3.3041889667510986, execution time: -2.0001144409179688 Total call:2 
-Reading file 
-File read 
-dummy #2, fit called at time:3.330190420150757, execution time: -2.0001144409179688 Total call:2 
-Reading file 
-dummy #3, fit called at time:3.333190441131592, execution time: -2.0001144409179688 Total call:2 
-dummy #1, fit called at time:3.340191125869751, execution time: -2.0031144618988037 Total call:2 
-dummy #9, fit called at time:3.325190305709839, execution time: -2.0031144618988037 Total call:2 
-dummy #5, fit called at time:3.333190679550171, execution time: -2.0021142959594727 Total call:2 
-Reading file 
-dummy #7, fit called at time:3.329190492630005, execution time: -2.0041143894195557 Total call:2 
-Reading file 
-dummy #4, fit called at time:3.335190773010254, execution time: -2.0041143894195557 Total call:2 
-Reading file 
-Reading file 
-Reading file 
-Reading file 
-File read 
-File read 
-File read 
-File read 
-File read 
-File read 
-File read 
-dummy #6, fit called at time:5.233299255371094, execution time: -2.0001144409179688 Total call:3 
-Reading file 
-File read 
-dummy #8, fit called at time:5.3173041343688965, execution time: -2.0001144409179688 Total call:3 
-Reading file 
-File read 
-dummy #3, fit called at time:5.409309148788452, execution time: -2.0001144409179688 Total call:3 
-Reading file 
-dummy #4, fit called at time:5.415309429168701, execution time: -2.004114866256714 Total call:3 
-Reading file 
-dummy #5, fit called at time:5.412309408187866, execution time: -2.007114887237549 Total call:3 
-File read 
-dummy #7, fit called at time:5.4083092212677, execution time: -2.005114793777466 Total call:3 
-Reading file 
-Reading file 
-dummy #1, fit called at time:5.420310020446777, execution time: -2.023115634918213 Total call:3 
-dummy #9, fit called at time:5.405309200286865, execution time: -2.013115167617798 Total call:3 
-dummy #2, fit called at time:5.418309926986694, execution time: -2.007114887237549 Total call:3 
-File read 
-Reading file 
-Reading file 
-File read 
-File read 
-File read 
-File read 
-File read 
-dummy #6, fit called at time:7.249414443969727, execution time: -2.0001144409179688 Total call:4 
-Reading file 
-File read 
-dummy #8, fit called at time:7.332419395446777, execution time: -2.0001144409179688 Total call:4 
-Reading file 
-File read 
-dummy #3, fit called at time:7.424424648284912, execution time: -2.0001142024993896 Total call:4 
-Reading file 
-File read 
-dummy #4, fit called at time:7.463426828384399, execution time: -2.0001144409179688 Total call:4 
-Reading file 
-dummy #7, fit called at time:7.467427015304565, execution time: -2.005114793777466 Total call:4 
-Reading file 
-File read 
-dummy #5, fit called at time:7.492428541183472, execution time: -2.0001142024993896 Total call:4 
-Reading file 
-File read 
-File read 
-dummy #9, fit called at time:7.505429267883301, execution time: -2.0001144409179688 Total call:4 
-Reading file 
-dummy #1, fit called at time:7.521430253982544, execution time: -2.0001142024993896 Total call:4 
-dummy #2, fit called at time:7.519430160522461, execution time: -2.0001142024993896 Total call:4 
-Reading file 
-Reading file 
-File read 
-File read 
-dummy #6, fit called at time:9.264529943466187, execution time: -2.0001142024993896 Total call:5 
-Reading file 
-File read 
-dummy #8, fit called at time:9.346534729003906, execution time: -2.0001142024993896 Total call:5 
-Reading file 
-File read 
-dummy #3, fit called at time:9.438539743423462, execution time: -2.0001144409179688 Total call:5 
-Reading file 
-File read 
-dummy #4, fit called at time:9.481542110443115, execution time: -2.0001144409179688 Total call:5 
-Reading file 
-dummy #7, fit called at time:9.489542722702026, execution time: -2.0011143684387207 Total call:5 
-Reading file 
-File read 
-dummy #5, fit called at time:9.506543636322021, execution time: -2.0021145343780518 Total call:5 
-File read 
-Reading file 
 File read 
-dummy #9, fit called at time:9.523545026779175, execution time: -2.0001139640808105 Total call:5 
-Reading file 
-File read 
-dummy #1, fit called at time:9.568547487258911, execution time: -2.0001144409179688 Total call:5 
-Reading file 
-dummy #2, fit called at time:9.56754732131958, execution time: -2.0001144409179688 Total call:5 
-Reading file 
-File read 
-File read 
-dummy #6, fit called at time:11.279644966125488, execution time: -2.0001144409179688 Total call:6 
-Reading file 
-File read 
-dummy #8, fit called at time:11.361649990081787, execution time: -2.0001144409179688 Total call:6 
-Reading file 
-File read 
-dummy #3, fit called at time:11.453655004501343, execution time: -2.0001144409179688 Total call:6 
-Reading file 
-File read 
-dummy #4, fit called at time:11.497657537460327, execution time: -2.0001144409179688 Total call:6 
-Reading file 
 File read 
-dummy #7, fit called at time:11.50565791130066, execution time: -2.0001144409179688 Total call:6 
+dummy #1, fit called at time:1.900108814239502, execution time: -2.0001144409179688 Total call:1 
 Reading file 
 File read 
-dummy #5, fit called at time:11.524658918380737, execution time: -2.0001144409179688 Total call:6 
+dummy #8, fit called at time:1.925110101699829, execution time: -2.0001144409179688 Total call:1 
 Reading file 
-File read 
-dummy #9, fit called at time:11.549660682678223, execution time: -2.0001144409179688 Total call:6 
-Reading file 
-File read 
-dummy #1, fit called at time:11.593662977218628, execution time: -2.0001144409179688 Total call:6 
-Reading file 
-dummy #2, fit called at time:11.594663381576538, execution time: -2.0041143894195557 Total call:6 
-Reading file 
-File read 
-File read 
-dummy #6, fit called at time:13.28875994682312, execution time: -2.0001144409179688 Total call:7 
+dummy #3, fit called at time:1.9391109943389893, execution time: -2.0041146278381348 Total call:1 
+dummy #9, fit called at time:1.9381110668182373, execution time: -2.0011143684387207 Total call:1 
+dummy #6, fit called at time:1.9441113471984863, execution time: -2.0011143684387207 Total call:1 
 Reading file 
-File read 
-dummy #8, fit called at time:13.369764804840088, execution time: -2.0001142024993896 Total call:7 
 Reading file 
-File read 
-dummy #3, fit called at time:13.461769819259644, execution time: -2.0001144409179688 Total call:7 
 Reading file 
 File read 
-dummy #4, fit called at time:13.505772113800049, execution time: -2.0001144409179688 Total call:7 
-Reading file 
 File read 
-dummy #7, fit called at time:13.51377272605896, execution time: -2.0001144409179688 Total call:7 
-Reading file 
 File read 
-dummy #5, fit called at time:13.532773733139038, execution time: -2.0001144409179688 Total call:7 
-Reading file 
 File read 
-dummy #9, fit called at time:13.558775663375854, execution time: -2.0001144409179688 Total call:7 
+dummy #5, fit called at time:2.056117534637451, execution time: -2.0001144409179688 Total call:1 
+dummy #4, fit called at time:2.058117628097534, execution time: -2.0001144409179688 Total call:1 
 Reading file 
-File read 
-dummy #1, fit called at time:13.601778030395508, execution time: -2.0001144409179688 Total call:7 
 Reading file 
 File read 
-dummy #2, fit called at time:13.607778310775757, execution time: -2.0001144409179688 Total call:7 
-Reading file 
 File read 
-dummy #6, fit called at time:15.290874719619751, execution time: -2.0001139640808105 Total call:8 
-dummy #8, fit called at time:15.37187910079956, execution time: -2.0001144409179688 Total call:8 
-dummy #3, fit called at time:15.463884115219116, execution time: -2.0001144409179688 Total call:8 
-dummy #4, fit called at time:15.50788688659668, execution time: -2.0001144409179688 Total call:8 
-dummy #7, fit called at time:15.51588749885559, execution time: -2.0001144409179688 Total call:8 
-dummy #5, fit called at time:15.534888505935669, execution time: -2.0001144409179688 Total call:8 
-dummy #9, fit called at time:15.560890197753906, execution time: -2.0001144409179688 Total call:8 
-dummy #1, fit called at time:15.60389256477356, execution time: -2.0001144409179688 Total call:8 
-dummy #2, fit called at time:15.609892845153809, execution time: -2.0001144409179688 Total call:8 
+dummy #2, fit called at time:3.709212303161621, execution time: -2.0001139640808105 Total call:2 
+dummy #7, fit called at time:3.700211524963379, execution time: -2.0001144409179688 Total call:2 
+dummy #1, fit called at time:3.925224542617798, execution time: -2.0001144409179688 Total call:2 
+dummy #8, fit called at time:3.952225923538208, execution time: -2.0001142024993896 Total call:2 
+dummy #3, fit called at time:4.0122294425964355, execution time: -2.0001144409179688 Total call:2 
+dummy #6, fit called at time:4.0072290897369385, execution time: -2.0001144409179688 Total call:2 
+dummy #9, fit called at time:4.0022289752960205, execution time: -2.0001144409179688 Total call:2 
+dummy #5, fit called at time:4.093234062194824, execution time: -2.0001144409179688 Total call:2 
+dummy #4, fit called at time:4.095234155654907, execution time: -2.0021145343780518 Total call:2 

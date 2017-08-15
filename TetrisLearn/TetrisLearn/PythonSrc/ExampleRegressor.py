@@ -7,17 +7,13 @@ Created on Mon Aug 14 13:17:29 2017
 
 import numpy as np
 import sklearn.preprocessing as skp
+import time
+
+from sklearn.svm import NuSVR
 
 from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin
 
-class ExampleRegressor(BaseEstimator, RegressorMixin):
-    
-    def __init__(self):
-        return
-    
-    
-        
-        
+
 class DataSelector(BaseEstimator, TransformerMixin):
     
     def __init__(self,
@@ -102,8 +98,11 @@ class DataSelector(BaseEstimator, TransformerMixin):
         
         #Phase
         skp.normalize(X[:, 258:262], copy=False)
-    
+      
+        
+ 
 
+       
 class LabelParser(BaseEstimator, TransformerMixin):
     
     def __init__(self, value="Score", propCoeff=0.9, maxIte=-1):
@@ -142,12 +141,63 @@ class LabelParser(BaseEstimator, TransformerMixin):
             upd[ dataParents[:].astype(int), 0] = (data[:,0] + upd[:,0]) * self.propCoeff
             
         return data[1:, 0] + upd[1:,0]
-            
-        
-        
-        
-        
     
+
+
+
+
+class ExampleRegressor(BaseEstimator, RegressorMixin):
+    
+    #Static
+    ID = 0
+    
+    def __init__(self,
+                 ds = DataSelector(),
+                 lp = LabelParser(),
+                 regressor = NuSVR(),
+                 file = "./ExReg.out",
+                 instanceID = 0):
+        
+        self.instanceID = ExampleRegressor.ID
+        ExampleRegressor.ID = ExampleRegressor.ID + 1
+        
+        self.ds = ds
+        self.lp = lp
+        self.regressor = regressor
+        self.file="./ExReg{}.out".format(self.ID)
+        
+        self.log ("Example Regressor #{}:  created at time {}\n".format(self.ID, time.time()))
+        
+        return
+    
+    def fit(self, X, Y):
+        
+        tFit = time.time()  
+        self.regressor.fit(self.ds.transform(X), self.lp.transform(Y))       
+        tFit = time.time() - tFit
+        
+        tScore = time.time()
+        score = self.regressor.score(self.ds.transform(X), self.lp.transform(Y))
+        tScore = time.time() - tScore
+        
+        self.log("Example Regressor #{}: fit time: {}, score time: {}, acc: {}\n".format(self.ID, tFit, tScore, score))
+    
+        return self
+    
+    
+    def predict(self, X):
+        
+        score = self.regressor.predict(self.ds.transform(X))
+        self.log("Example Regressor #{}: predict call with result: {}\n".format(self.ID, score))
+        
+        return score
+    
+    def log(self, msg):
+        out = open(self.file, 'a')
+        out.write(msg)
+        out.close()
+        
+        
 #  //Current Tetra 0-6
 #	//Next Tetra 7-13 / 14-20 / 21-27
 #	//Hold type 28-34
@@ -167,16 +217,22 @@ if __name__ == "__main__":
     
     import Wrapper as w
     
-    d = w.Data()
+    #d = w.Data()
     
-    d.loadDataFromFile("../inputData_save.raw")
+    #d.loadDataFromFile("../inputData_save.raw")
     
-    ds = DataSelector()
-    lp = LabelParser()
+    #ds = DataSelector()
+    #lp = LabelParser()
     
-    X = ds.transform(d.getData())
-    Y = lp.transform(d.getScores())
-    W = d.getScores()
+    #X = ds.transform(d.getData())
+    #Y = lp.transform(d.getScores())
+    #W = d.getScores()
+    
+    regr = w.getWrapper("ExampleRegressor")
+    
+    regr.fitFromFile("../inputData_save.raw")
+    
+    regr.predictFromStr("0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,5,18,6,18,6,19,4,18,5,17,6,17,6,18,4,17,1,0,0,0,0,0,2,3")
 
     
     

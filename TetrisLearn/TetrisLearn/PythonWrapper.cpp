@@ -6,8 +6,11 @@ long PythonWrapper::instanceCounter = 0;
 
 PyObject* PythonWrapper::getFunc = nullptr;
 
+PyThreadState* PythonWrapper::tstate = nullptr;
+
 PythonWrapper::PythonWrapper(std::string className)
 {
+
 	//FIrst instance init routine
 	if (instanceCounter == LONG_MAX) 
 		throw new std::exception("Too many PythonWrapper");
@@ -15,8 +18,8 @@ PythonWrapper::PythonWrapper(std::string className)
 	if (instanceCounter++ == 0 && pythonInit() == false)
 		throw new std::exception("Python failed to init");
 
+	PyGILHandler GILHandler; //We need the GIL from here
 
-	GILHandler.getLock();
 	//Get an instance of the estimator in className.py wrapped in Wrapper.py.
 	PyObject* pArg = Py_BuildValue("s", className.c_str());
 
@@ -29,8 +32,6 @@ PythonWrapper::PythonWrapper(std::string className)
 		throw new std::exception("Failed to load estimator");
 
 	Py_DECREF(pArg);
-
-	GILHandler.releaseLock();
 }
 
 PythonWrapper::~PythonWrapper()
@@ -43,18 +44,25 @@ PythonWrapper::~PythonWrapper()
 		delete(learningThread);
 	}
 
-Py_DECREF(pInstance);
+	//Need the GIL for one line...
+	PyGILState_STATE gstate = PyGILState_Ensure();
+	Py_DECREF(pInstance);
+	PyGILState_Release(gstate);
 
-if (--instanceCounter == 0)
-pythonFinal();
+
+	if (--instanceCounter == 0)
+	{
+		pythonFinal();
+	}
 }
 
 float PythonWrapper::scoreMove(std::string inputStr)
 {
+
 	float ret;
 	PyObject *pFuncName, *pReturn, *pArgs;
-
-	GILHandler.getLock();
+	
+	PyGILHandler GILHandler; //Get the GIL
 
 	pFuncName = Py_BuildValue("s", PYTHON_PRED_METHOD);
 	if (pFuncName == NULL)
@@ -62,7 +70,6 @@ float PythonWrapper::scoreMove(std::string inputStr)
 		fprintf(stderr, "Error in scoreMove, function name\n");
 		Py_DECREF(pFuncName);
 
-		GILHandler.releaseLock();
 		return -1;
 	}
 
@@ -72,7 +79,6 @@ float PythonWrapper::scoreMove(std::string inputStr)
 		fprintf(stderr, "Error in scoreMove, Arg string\n");
 		Py_DECREF(pArgs);
 
-		GILHandler.releaseLock();
 		return -1;
 	}
 
@@ -85,15 +91,14 @@ float PythonWrapper::scoreMove(std::string inputStr)
 		fprintf(stderr, "Error in scoreMove, function call\n");
 		Py_DECREF(pReturn);
 
-		GILHandler.releaseLock();
 		return -1;
 	}
 
 	ret = (float)PyFloat_AsDouble(pReturn);
+	
 
 	Py_DECREF(pReturn);
 
-	GILHandler.releaseLock();
 	return ret;
 }
 
@@ -121,6 +126,7 @@ bool PythonWrapper::pythonInit()
 {
 	//Init interpreter
 	Py_Initialize();
+	PyEval_InitThreads(); //We hold the GIL from here
 
 	//Import path and append custom script location
 	PyObject *sys, *path, *newEntry;
@@ -167,6 +173,10 @@ bool PythonWrapper::pythonInit()
 	{
 		fprintf(stderr, "Failed to load \"%s\"\n", PYTHON_MODULE);
 		Py_DECREF(wrapperModule);
+
+		//Init is done, release GIL from Main thread
+		tstate = PyEval_SaveThread();
+
 		return false;
 	}
 
@@ -179,43 +189,52 @@ bool PythonWrapper::pythonInit()
 	{
 		fprintf(stderr, "Cannot find function \"%s\"\n", PYTHON_FUNC);
 		Py_DECREF(getFunc);
+
+		//Init is done, release GIL from Main thread
+		tstate = PyEval_SaveThread();
+
 		return false;
 	}
+
+	//Init is done, release GIL from Main thread
+	tstate = PyEval_SaveThread();
 
 	return true;
 }
 
 bool PythonWrapper::pythonFinal()
 {
+	//Get the GIL before closing the interpreter
+	PyEval_RestoreThread(tstate);
+
 	Py_XDECREF(getFunc);
 
 	//Apparently unstable with threading, cause access violation and seems optional
 	//Commenting it out for now
-	/*
+	
 	if (Py_FinalizeEx() < 0)
 	{
 		fprintf(stderr, "Error on Python Finalize\n");
 		return false;
 	}
-	*/
+	
 
 	return true;
 }
 
 void PythonWrapper::learning()
 {
+
 	PyObject *pFuncName, *pDataFile;
 
-
-	GILHandler.getLock();
-
+	PyGILHandler GILHandler; //Get the GIL (released on exit)
+	
 	pFuncName = Py_BuildValue("s", PYTHON_FIT_METHOD/*"fit"*/);
 	if (pFuncName == NULL)
 	{
 		fprintf(stderr, "Error in startLearning, function name\n");
 		Py_DECREF(pFuncName);
 
-		GILHandler.releaseLock();
 		return;
 	}
 
@@ -225,7 +244,6 @@ void PythonWrapper::learning()
 		fprintf(stderr, "Error in startLearning, data file name\n");
 		Py_DECREF(pDataFile);
 
-		GILHandler.releaseLock();
 		return;
 	}
 
@@ -242,7 +260,6 @@ void PythonWrapper::learning()
 			fprintf(stderr, "Something went wrong\n");
 			Py_DECREF(pFuncName);
 			Py_DECREF(pDataFile);
-			Py_DECREF(pCallReturn);
 
 			throw new std::exception("Error in learning");
 		}
@@ -254,8 +271,6 @@ void PythonWrapper::learning()
 	Py_DECREF(pFuncName);
 	Py_DECREF(pDataFile);
 	Py_DECREF(pCallReturn); //Apparently DECREF here only once is OK, doing it in the loop is not.
-
-	GILHandler.releaseLock();
 	
 	isLearningFlag = false;
 }

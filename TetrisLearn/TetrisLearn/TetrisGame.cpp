@@ -199,7 +199,7 @@ void TetrisGame::panelSetup(const sf::Vector2f anchor, size_t index)
 	case InputMethod::Player:
 		//controller = new KeyboardController(*(boards.front()), *this);
 		//controller->setKeysMapping(Settings::getBoard(index).mapping);
-		controller = new LearningController(*(boards.front()), *this, "DummyClassifier");
+		controller = new LearningController(*(boards.front()), *this, "ExampleRegressor");
 
 		controllers.push_front(std::shared_ptr<Controller>(controller));
 		break;

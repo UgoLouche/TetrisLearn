@@ -17,9 +17,6 @@ public:
 	PyGILHandler();
 	~PyGILHandler();
 
-	void getLock();
-	void releaseLock();
-
 private:
-	static PyGILState_STATE gstate;
+	PyGILState_STATE gstate;
 };

@@ -42,7 +42,10 @@ private:
 	static PyObject* getFunc;
 
 	//Python MThread support
-	PyGILHandler GILHandler = PyGILHandler();
+	static PyThreadState* tstate;
+	//PyGILHandler GILHandler = PyGILHandler();
+
+
 
 	//Learning and Thread
 	std::atomic_flag keepLearning;
