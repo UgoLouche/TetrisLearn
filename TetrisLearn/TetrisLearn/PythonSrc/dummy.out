@@ -138,3 +138,13 @@ dummy #1, fit called at time:2.3341333866119385, execution time: -2.000114440917
 Reading file 
 File read 
 dummy #1, fit called at time:4.336248159408569, execution time: -2.0001144409179688 Total call:3 
+dummy #1 created at time: 1503498024.354629
+Reading file 
+File read 
+dummy #1, fit called at time:0.021001100540161133, execution time: -2.0001144409179688 Total call:1 
+Reading file 
+File read 
+dummy #1, fit called at time:2.027116060256958, execution time: -2.0001142024993896 Total call:2 
+Reading file 
+File read 
+dummy #1, fit called at time:4.032230615615845, execution time: -2.0001144409179688 Total call:3 

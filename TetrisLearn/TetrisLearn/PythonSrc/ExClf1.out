@@ -1,0 +1,22 @@
+Example Classifier #1:  created at time 1503334085.2068462
+Example Classifier #1:  created at time 1503334136.3187697
+Example Classifier #1:  created at time 1503334325.4685884
+Example Classifier #1:  created at time 1503334338.0783095
+Example Classifier #1:  created at time 1503334521.118779
+Example Classifier #1:  created at time 1503334526.9321113
+Example Classifier #1:  created at time 1503334776.05036
+Example Classifier #1:  created at time 1503334855.511905
+Example Classifier #1:  created at time 1503334872.2858644
+Example Classifier #1:  created at time 1503335246.7612834
+Example Regressor #1: Process time: 0.06400346755981445, fit time: 37.59915065765381, score time: 31.198784351348877, acc: 0.8571428571428571
+Example Classifier #1:  created at time 1503335732.7760816
+Example Regressor #1: Process time: 0.05900311470031738, fit time: 38.211185693740845, score time: 30.822762966156006, acc: 0.8571428571428571
+Example Regressor #1: predict call with result: [-1. -1. -1. ..., -1. -1. -1.]
+Example Classifier #1:  created at time 1503336119.5892062
+Example Classifier #1:  created at time 1503336198.612726
+Example Classifier #1:  created at time 1503388836.359433
+Example Classifier #1:  created at time 1503409653.200088
+Example Classifier #1:  created at time 1503498221.5939105
+Example Regressor #1: Process time: 0.00500035285949707, fit time: 0.18801093101501465, score time: 0.15700888633728027, acc: 0.8571428571428571
+Example Classifier #1:  created at time 1503498225.4291298
+Example Regressor #1: Process time: 0.004000186920166016, fit time: 0.18401050567626953, score time: 0.16200947761535645, acc: 0.8571428571428571

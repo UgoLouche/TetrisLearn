@@ -212,11 +212,7 @@ bool PythonWrapper::pythonFinal()
 	//Apparently unstable with threading, cause access violation and seems optional
 	//Commenting it out for now
 	
-	if (Py_FinalizeEx() < 0)
-	{
-		fprintf(stderr, "Error on Python Finalize\n");
-		return false;
-	}
+	Py_Finalize();
 	
 
 	return true;

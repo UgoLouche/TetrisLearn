@@ -164,3 +164,59 @@ Example Regressor #1: fit time: 1.2400708198547363, score time: 0.80204606056213
 Example Regressor #1: predict call with result: [ 0.31837203]
 6
 7
+Example Regressor #1:  created at time 1503410273.6405752
+Reading file 
+File read 
+Example Regressor #1: fit time: 25.04043221473694, score time: 15.873907804489136, acc: 0.042188182162132826
+Example Regressor #1: predict call with result: [ 0.26232932]
+Example Regressor #1:  created at time 1503437036.4873226
+Reading file 
+File read 
+Example Regressor #1:  created at time 1503496761.5073984
+Reading file 
+File read 
+Example Regressor #1:  created at time 1503497625.887838
+Reading file 
+File read 
+Example Regressor #1:  created at time 1503497663.0869658
+Reading file 
+File read 
+Example Regressor #1:  created at time 1503497750.7319787
+Reading file 
+File read 
+Example Regressor #1:  created at time 1503497797.4736521
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.03000187873840332, score time: 0.008000373840332031, acc: 1.0
+Example Regressor #1: predict call with result: [ 0.]
+Example Regressor #1:  created at time 1503497827.556373
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.002000093460083008, score time: 0.0010001659393310547, acc: 1.0
+Example Regressor #1: predict call with result: [ 0.]
+Example Regressor #1:  created at time 1503497846.1694374
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.0010001659393310547, score time: 0.002000093460083008, acc: 1.0
+Reading file 
+Example Regressor #1:  created at time 1503497930.1652417
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.002000093460083008, score time: 0.0020003318786621094, acc: 1.0
+Reading file 
+Example Regressor #1:  created at time 1503498034.4712076
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.002000093460083008, score time: 0.0010001659393310547, acc: 1.0
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.0009999275207519531, score time: 0.002000093460083008, acc: 1.0
+Example Regressor #1: predict call with result: [ 0.]
+Example Regressor #1:  created at time 1503498036.505324
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.0010001659393310547, score time: 0.0009999275207519531, acc: 1.0
+Reading file 
+File read 
+Example Regressor #1: fit time: 0.0010001659393310547, score time: 0.002000093460083008, acc: 1.0
+Example Regressor #1: predict call with result: [ 0.]

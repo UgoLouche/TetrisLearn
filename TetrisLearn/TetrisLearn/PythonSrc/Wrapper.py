@@ -71,9 +71,17 @@ class Wrapper(BaseEstimator, RegressorMixin):
         
         self.wrapped_future.log("File read \n")
         
-        #If that doesn't return anything, the C++ side of the call will raise an exception
+        # If that doesn't return anything, the C++ side of the call will raise an exception
         # regarding thread state (tstate) when shutting down the interpreter. Go figure.
-        return self.fit(self.persData.getData(), self.persData.getScores())
+        # -- That issue might have been fixed. Leaving it here in case it's not.
+        
+        #Ignore call if no data are loaded yet.
+        X = self.persData.getData()
+        Y = self.persData.getScores()
+        if X is None or Y is None:
+            return self
+        
+        return self.fit(X, Y)
         
 
 ### Data Wrapper   
@@ -103,14 +111,14 @@ class Data:
         #If reading only one line, data is presented as a column vector
         if data.ndim == 1:
             if data.shape[0] == self.innerData.shape[1]:
-                data = np.reshape(data, self.innerData.shape)
+                data = np.reshape(data, (1, self.innerData.shape[1]))
                 
             #Abort if some data are simply missing or bad formatted line.
             else:
                 return 0
         
         
-        if (self.innerData==None):
+        if (self.innerData is None):
             self.innerData = data
             return self.innerData.shape[0]
             
@@ -119,7 +127,11 @@ class Data:
             self.innerData = np.concatenate((self.innerData, data))
             return self.innerData.shape[0] - prevLength
               
-    def getData(self, idStart=-1, idEnd=-1):    
+    def getData(self, idStart=-1, idEnd=-1): 
+        
+        if self.innerData is None:
+            return None
+        
         if idStart == -1:
             idStart = 0
         if idEnd == -1:
@@ -129,6 +141,10 @@ class Data:
         
     
     def getScores(self, idStart=-1, idEnd=-1):
+        
+        if self.innerData is None:
+            return None
+        
         if idStart == -1:
             idStart = 0
         if idEnd == -1:

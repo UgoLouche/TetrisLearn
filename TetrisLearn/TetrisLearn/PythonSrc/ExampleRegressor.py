@@ -216,20 +216,60 @@ class ExampleRegressor(BaseEstimator, RegressorMixin):
 if __name__ == "__main__":
     
     import Wrapper as w
+    from sklearn.model_selection import GridSearchCV
     
-    #d = w.Data()
-    
-    #d.loadDataFromFile("../inputData_save.raw")
-    
-    #ds = DataSelector()
-    #lp = LabelParser()
-    
-    #X = ds.transform(d.getData())
-    #Y = lp.transform(d.getScores())
-    #W = d.getScores()
+#    d = w.Data()
+#    
+#    d.loadDataFromFile("../inputData_save.raw")
+#      
+#    
+#    ds = DataSelector()
+#    lp = LabelParser()
+#    
+#    X = ds.transform(d.getData())
+#    Y = lp.transform(d.getScores())
+#    #W = d.getScores()
+#    
+#    clf = NuSVR()
+#    
+#    parameters = [
+#            { 
+#              'C' : np.logspace(-10,10,5),
+#              'kernel' : ['rbf'],
+#              'gamma'  : np.logspace(-10,10,5),
+#              'nu'     : np.arange(0.001, 1, 5),
+#              'shrinking' : [True, False]
+#            },
+#            { 
+#              'C' : np.logspace(-10,10,5),
+#              'kernel' : ['poly'],
+#              'gamma'  : np.logspace(-10,10,5),
+#              'nu'     : np.arange(0.001, 1, 5),
+#              'shrinking' : [True, False],
+#              'degree' : np.arange(1,5),
+#              'coef0'  : np.arange(0,100, 5)
+#            },
+#            { 
+#              'C' : np.logspace(-10,10,5),
+#              'kernel' : ['sigmoid'],
+#              'gamma'  : np.logspace(-10,10,5),
+#              'nu'     : np.arange(0.001, 1, 5),
+#              'shrinking' : [True, False],
+#              'coef0'  : np.arange(0,100, 5)
+#            },
+#            { 
+#              'C' : np.logspace(-10,10,5),
+#              'kernel' : ['linear'],
+#              'nu'     : np.arange(0.001, 1, 5),
+#              'shrinking' : [True, False]
+#            }
+#                ]
+#    
+#    grid = GridSearchCV(clf, parameters, n_jobs=6, cv=10, error_score=-1e100)
     
     regr = w.getWrapper("ExampleRegressor")
     
+    regr.fitFromFile("../inputData_save.raw")
     regr.fitFromFile("../inputData_save.raw")
     
     regr.predictFromStr("0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,5,18,6,18,6,19,4,18,5,17,6,17,6,18,4,17,1,0,0,0,0,0,2,3")
