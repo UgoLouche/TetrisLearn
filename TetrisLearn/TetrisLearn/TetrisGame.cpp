@@ -192,21 +192,23 @@ void TetrisGame::panelSetup(const sf::Vector2f anchor, size_t index)
 	world.registerElement(LayerType::GameEntity, boards.front() );
 
 	//Controls
-	//KeyboardController* controller = nullptr;
 	LearningController* controller = nullptr;
 	switch (Settings::getBoard(index).control)
 	{
 	case InputMethod::Player:
-		//controller = new KeyboardController(*(boards.front()), *this);
-		//controller->setKeysMapping(Settings::getBoard(index).mapping);
-		controller = new LearningController(*(boards.front()), *this, "ExampleRegressor");
+	{
+		KeyboardController* controller = nullptr;
+		controller = new KeyboardController(*(boards.front()), *this);
+		controller->setKeysMapping(Settings::getBoard(index).getUnion<const EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>>());
 
 		controllers.push_front(std::shared_ptr<Controller>(controller));
 		break;
-
+	}
 	case InputMethod::Static_AI:
 	case InputMethod::Learning:
-		//TODO add AI
+		controller = new LearningController(*(boards.front()), *this, Settings::getBoard(index).getUnion<const std::string>());
+
+		controllers.push_front(std::shared_ptr<Controller>(controller));
 	default:
 		break;
 	}

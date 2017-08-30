@@ -7,16 +7,7 @@
 #include "enum.hpp"
 #include "EnumeratedArray.hpp"
 #include "const.hpp"
-
-typedef struct BoardSettings
-{
-	std::string name;
-	InputMethod control;
-	bool recording;
-
-	EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS> mapping;
-
-} BoardSettings;
+#include "BoardSettings.hpp"
 
 typedef struct GeneralSettings
 {

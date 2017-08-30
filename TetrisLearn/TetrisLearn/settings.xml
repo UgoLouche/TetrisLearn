@@ -159,6 +159,15 @@
 		</board>
 		
 		<board>
+			<name>Learning</name>
+			<controlscheme>
+				<learning>
+					<path>./PythonScript/DummyClassifier.py</path>
+				</learning>
+			<controlscheme>
+		</board>
+		
+		<board>
 			<name>half-mapped</name>
 			<controlscheme>
 				<keyboard>

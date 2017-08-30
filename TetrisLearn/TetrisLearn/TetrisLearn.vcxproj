@@ -83,12 +83,11 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\..\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalOptions>/d1reportSingleClassLayoutGameWindow  /showIncludes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/d1reportSingleClassLayoutGameWindow %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>..\..\libs\Python;..\..\libs\pugiXML\Win64_Debug;..\..\libs\ProtoEng;..\..\libs\SFML;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>python35.lib;pugixml.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;ProtoEng.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,6 +125,7 @@
     <ClCompile Include="Block.cpp" />
     <ClCompile Include="BlocksPool.cpp" />
     <ClCompile Include="BoardGrid.cpp" />
+    <ClCompile Include="BoardSettings.cpp" />
     <ClCompile Include="BoardUIManager.cpp" />
     <ClCompile Include="DummyController.cpp" />
     <ClCompile Include="enum.cpp" />
@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlockPool.hpp" />
+    <ClInclude Include="BoardSettings.hpp" />
     <ClInclude Include="IBlocksPool.hpp" />
     <ClInclude Include="IBoard.hpp" />
     <ClInclude Include="IBoardContent.hpp" />

@@ -40,26 +40,27 @@ private:
 	BoardSettings* allocateCustomBoard(const pugi::xml_node& boardNode);
 	void resetBoard(BoardSettings& board); //Reset a given board to default value
 	bool parseKeyboard(const pugi::xml_node& keyboardNode, BoardSettings& board);
+	bool parseLearning(const pugi::xml_node& learningNode, BoardSettings& board);
 
 
 	//Parsing methods for simple markups
-	sf::Vector2i parseSize        (const pugi::xml_node& node, const sf::Vector2i& defaultValue) const;
-	int          parseSize        (const pugi::xml_node& node, const int           defaultValue) const;
-	sf::Vector2f parsePosition    (const pugi::xml_node& node, const sf::Vector2f& defaultValue) const;
-	std::string  parseName        (const pugi::xml_node& node, const std::string&  defaultValue) const;
-	std::string  parsePath        (const pugi::xml_node& node, const std::string&  defaultValue) const;
-	int          parsePoolsize    (const pugi::xml_node& node, const int           defaultValue) const;
-	std::string  parseTexture     (const pugi::xml_node& node, const std::string&  defaultValue) const;
-	std::string  parseCounter     (const pugi::xml_node& node, const std::string&  defaultValue) const;
-	int          parseLock        (const pugi::xml_node& node, const int           defaultValue) const;
-	int          parseAutoScroll  (const pugi::xml_node& node, const int           defaultValue) const;
-	int          parseFlash       (const pugi::xml_node& node, const int           defaultValue) const;
-	int          parseTimer       (const pugi::xml_node& node, const int           defaultValue) const;
-	int          parseStepToEnable(const pugi::xml_node& node, const int           defaultValue) const;
-	float        parseScore       (const pugi::xml_node& node, const float         defaultValue) const;
-	float        parseMultiplier  (const pugi::xml_node& node, const float         defaultValue) const;
-	float        parseSpeed       (const pugi::xml_node& node, const float         defaultValue) const;
-	float        parseLine        (const pugi::xml_node& node, const float         defaultValue) const;
+	sf::Vector2i parseSize         (const pugi::xml_node& node, const sf::Vector2i& defaultValue) const;
+	int          parseSize         (const pugi::xml_node& node, const int           defaultValue) const;
+	sf::Vector2f parsePosition     (const pugi::xml_node& node, const sf::Vector2f& defaultValue) const;
+	std::string  parseName         (const pugi::xml_node& node, const std::string&  defaultValue) const;
+	std::string  parsePath         (const pugi::xml_node& node, const std::string&  defaultValue) const;
+	int          parsePoolsize     (const pugi::xml_node& node, const int           defaultValue) const;
+	std::string  parseTexture      (const pugi::xml_node& node, const std::string&  defaultValue) const;
+	std::string  parseCounter      (const pugi::xml_node& node, const std::string&  defaultValue) const;
+	int          parseLock         (const pugi::xml_node& node, const int           defaultValue) const;
+	int          parseAutoScroll   (const pugi::xml_node& node, const int           defaultValue) const;
+	int          parseFlash        (const pugi::xml_node& node, const int           defaultValue) const;
+	int          parseTimer        (const pugi::xml_node& node, const int           defaultValue) const;
+	int          parseStepToEnable (const pugi::xml_node& node, const int           defaultValue) const;
+	float        parseScore        (const pugi::xml_node& node, const float         defaultValue) const;
+	float        parseMultiplier   (const pugi::xml_node& node, const float         defaultValue) const;
+	float        parseSpeed        (const pugi::xml_node& node, const float         defaultValue) const;
+	float        parseLine         (const pugi::xml_node& node, const float         defaultValue) const;
 
 	// Underlying type parsing
 	sf::Keyboard::Key parseKey    (const pugi::xml_node& node, const sf::Keyboard::Key& defaultValue) const;

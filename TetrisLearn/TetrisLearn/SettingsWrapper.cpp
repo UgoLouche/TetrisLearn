@@ -485,21 +485,29 @@ BoardSettings * SettingsWrapper::allocateCustomBoard(const pugi::xml_node & boar
 
 void SettingsWrapper::resetBoard(BoardSettings & board)
 {
+	using EnumArray = EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>;
+
 	board.name = DEFAULT_BOARD_NAME;
 	board.control = DEFAULT_BOARD_CONTROL;
 	board.recording = DEFAULT_RECORDING;
 
-	board.mapping[InputKeys::UP] = DEFAULT_KEY_UP;
-	board.mapping[InputKeys::LEFT] = DEFAULT_KEY_LEFT;
-	board.mapping[InputKeys::RIGHT] = DEFAULT_KEY_RIGHT;
-	board.mapping[InputKeys::DOWN] = DEFAULT_KEY_DOWN;
-	board.mapping[InputKeys::LFLIP] = DEFAULT_KEY_LFLIP;
-	board.mapping[InputKeys::RFLIP] = DEFAULT_KEY_RFLIP;
-	board.mapping[InputKeys::HOLD] = DEFAULT_KEY_HOLD;
+	EnumArray control;
+
+	control[InputKeys::UP] = DEFAULT_KEY_UP;
+	control[InputKeys::LEFT] = DEFAULT_KEY_LEFT;
+	control[InputKeys::RIGHT] = DEFAULT_KEY_RIGHT;
+	control[InputKeys::DOWN] = DEFAULT_KEY_DOWN;
+	control[InputKeys::LFLIP] = DEFAULT_KEY_LFLIP;
+	control[InputKeys::RFLIP] = DEFAULT_KEY_RFLIP;
+	control[InputKeys::HOLD] = DEFAULT_KEY_HOLD;
+
+	board.setUnion<EnumArray>(control);
 }
 
 bool SettingsWrapper::parseKeyboard(const pugi::xml_node& keyboardNode, BoardSettings & board)
 {
+	using EnumArray = EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>;
+
 	board.control = InputMethod::Player;
 
 	for (auto it = keyboardNode.begin(); it != keyboardNode.end(); ++it)
@@ -508,28 +516,46 @@ bool SettingsWrapper::parseKeyboard(const pugi::xml_node& keyboardNode, BoardSet
 		if (strcmp(it->name(), MARKUP_KEY) != 0) continue;
 
 		if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_UP) == 0)
-			board.mapping[InputKeys::UP] = parseKey(*it, board.mapping[InputKeys::UP]);
+			board.getUnion<EnumArray>()[InputKeys::UP] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::UP]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_DOWN) == 0)
-			board.mapping[InputKeys::DOWN] = parseKey(*it, board.mapping[InputKeys::DOWN]);
+			board.getUnion<EnumArray>()[InputKeys::DOWN] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::DOWN]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_LEFT) == 0)
-			board.mapping[InputKeys::LEFT] = parseKey(*it, board.mapping[InputKeys::LEFT]);
+			board.getUnion<EnumArray>()[InputKeys::LEFT] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::LEFT]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_RIGHT) == 0)
-			board.mapping[InputKeys::RIGHT] = parseKey(*it, board.mapping[InputKeys::RIGHT]);
+			board.getUnion<EnumArray>()[InputKeys::RIGHT] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::RIGHT]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_RFLIP) == 0)
-			board.mapping[InputKeys::LFLIP] = parseKey(*it, board.mapping[InputKeys::LFLIP]);
+			board.getUnion<EnumArray>()[InputKeys::LFLIP] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::LFLIP]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_LFLIP) == 0)
-			board.mapping[InputKeys::RFLIP] = parseKey(*it, board.mapping[InputKeys::RFLIP]);
+			board.getUnion<EnumArray>()[InputKeys::RFLIP] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::RFLIP]);
 
 		else if (strcmp(it->attribute(ATTR_INPUT).as_string(), ATTR_INPUT_HOLD) == 0)
-			board.mapping[InputKeys::HOLD] = parseKey(*it, board.mapping[InputKeys::HOLD]);
+			board.getUnion<EnumArray>()[InputKeys::HOLD] = parseKey(*it, board.getUnion<EnumArray>()[InputKeys::HOLD]);
 	}
 
 	return true;
+}
+
+bool SettingsWrapper::parseLearning(const pugi::xml_node & learningNode, BoardSettings & board)
+{
+	board.control = InputMethod::Learning;
+
+	for (auto it = learningNode.begin(); it != learningNode.end(); ++it)
+	{
+		//Ignore everything but <path>
+		if (strcmp(it->name(), MARKUP_PATH) != 0) continue;
+		else
+		{
+			board.setUnion<std::string>(parsePath(*it, DEFAULT_SCRIPT_PATH));
+			return true;
+		}
+	}
+
+	return false;
 }
 
 sf::Vector2i SettingsWrapper::parseSize(const pugi::xml_node & node, const sf::Vector2i & defaultValue) const

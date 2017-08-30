@@ -252,6 +252,9 @@
     <ClCompile Include="PyGILHandler.cpp">
       <Filter>Source Files\Python</Filter>
     </ClCompile>
+    <ClCompile Include="BoardSettings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TetrisGame.hpp">
@@ -376,6 +379,9 @@
     </ClInclude>
     <ClInclude Include="PyGILHandler.hpp">
       <Filter>Header Files\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardSettings.hpp">
+      <Filter>Header Files\Settings</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -85,3 +85,5 @@
 #define DEFAULT_KEY_LFLIP      sf::Keyboard::Key::A
 #define DEFAULT_KEY_RFLIP      sf::Keyboard::Key::E
 #define DEFAULT_KEY_HOLD       sf::Keyboard::Key::F
+
+#define DEFAULT_SCRIPT_PATH    "./PythonSrc/DummyClassifier.py"
