@@ -119,18 +119,21 @@
 		<poolsize>100</poolsize>
 		<texture>BlockTexture.png</texture>
 	</block>
+
 -->	
+
 	<score>	
 		<line>
 			<score>1</score>
 			<multiplier>2</multiplier>
-		<line>
+		</line>
 		<level>
 			<multiplier>1</multiplier>
 			<speed>0.1</speed>
 			<line>2</line>
 		</level>
 	</score>
+
 <!--
 	
 	<recording>

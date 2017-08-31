@@ -413,20 +413,26 @@ bool SettingsWrapper::parseScore(const pugi::xml_node & scoreNode)
 	{
 		if (strcmp(it->name(), MARKUP_LINE) == 0)
 		{
-			if (strcmp(it->name(), MARKUP_SCORE) == 0)
-				settings.lineScore = parseScore(*it, settings.lineScore);
-			else if (strcmp(it->name(), MARKUP_MULTIPLIER) == 0)
-				settings.lineMultiplier = parseMultiplier(*it, settings.lineMultiplier);
+			for (auto inner = it->begin(); inner != it->end(); ++inner)
+			{
+				if (strcmp(inner->name(), MARKUP_SCORE) == 0)
+					settings.lineScore = parseScore(*inner, settings.lineScore);
+				else if (strcmp(inner->name(), MARKUP_MULTIPLIER) == 0)
+					settings.lineMultiplier = parseMultiplier(*inner, settings.lineMultiplier);
+			}
 		}
 
 		else if (strcmp(it->name(), MARKUP_LEVEL) == 0)
 		{
-			if (strcmp(it->name(), MARKUP_MULTIPLIER) == 0)
-				settings.levelMultipler = parseMultiplier(*it, settings.levelMultipler);
-			else if (strcmp(it->name(), MARKUP_SPEED) == 0)
-				settings.levelSpeed = parseSpeed(*it, settings.levelSpeed);
-			else if (strcmp(it->name(), MARKUP_LINE) == 0)
-				settings.linesToLevelup = parseLine(*it, settings.linesToLevelup);
+			for (auto inner = it->begin(); inner != it->end(); ++inner)
+			{
+				if (strcmp(inner->name(), MARKUP_MULTIPLIER) == 0)
+					settings.levelMultipler = parseMultiplier(*inner, settings.levelMultipler);
+				else if (strcmp(inner->name(), MARKUP_SPEED) == 0)
+					settings.levelSpeed = parseSpeed(*inner, settings.levelSpeed);
+				else if (strcmp(inner->name(), MARKUP_LINE) == 0)
+					settings.linesToLevelup = parseLine(*inner, settings.linesToLevelup);
+			}
 		}
 	}
 

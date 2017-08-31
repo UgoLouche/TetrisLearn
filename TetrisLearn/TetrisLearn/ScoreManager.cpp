@@ -15,7 +15,7 @@ void ScoreManager::addScore_custom(size_t lineCleared)
 
 	// Check for levelUp
 	levelProgress += lineCleared;
-	while (levelProgress > Settings::get().linesToLevelup)
+	while (levelProgress >= Settings::get().linesToLevelup)
 	{
 		setLevel(level + 1);
 		levelProgress -= (size_t)Settings::get().linesToLevelup;
