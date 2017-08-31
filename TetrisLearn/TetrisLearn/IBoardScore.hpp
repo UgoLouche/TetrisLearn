@@ -11,10 +11,14 @@ public:
 	size_t getScore() const;
 	size_t getLevel() const;
 
+	void reset();
+
 private:
 	virtual void addScore_custom(size_t lineCleared) = 0;
 
 	virtual size_t simulateScore_custom(size_t lineCleared, size_t level) const = 0;
 	virtual size_t getScore_custom() const = 0;
 	virtual size_t getLevel_custom() const = 0;
+
+	virtual void reset_custom() = 0;
 };

@@ -77,9 +77,10 @@
 #define DEFAULT_SAVE_PATH     "./inputData_save.raw"
 
 //Board specific
-#define DEFAULT_BOARD_NAME     "Default Board"
-#define DEFAULT_BOARD_CONTROL  InputMethod::Player
-#define DEFAULT_RECORDING      false
+#define DEFAULT_BOARD_NAME      "Default Board"
+#define DEFAULT_BOARD_CONTROL   InputMethod::Player
+#define DEFAULT_RECORDING       false
+#define DEFAULT_BOARD_RECURRING false
 
 #define DEFAULT_KEY_UP         sf::Keyboard::Key::Z
 #define DEFAULT_KEY_LEFT       sf::Keyboard::Key::Q

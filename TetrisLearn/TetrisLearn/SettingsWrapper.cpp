@@ -478,8 +478,13 @@ BoardSettings * SettingsWrapper::allocateCustomBoard(const pugi::xml_node & boar
 	{
 		if (strcmp(it->name(), MARKUP_NAME) == 0)
 			ret->name = parseName(*it, ret->name);
+
 		else if (strcmp(it->name(), MARKUP_RECORDING) == 0)
 			ret->recording = true;
+
+		else if (strcmp(it->name(), MARKUP_RECURRING) == 0)
+			ret->isRecurring = true;
+
 		else if (strcmp(it->name(), MARKUP_CONTROL) == 0)
 		{
 			for (auto inner = it->begin(); inner != it->end(); ++inner)
@@ -515,6 +520,7 @@ void SettingsWrapper::resetBoard(BoardSettings & board)
 	board.name = DEFAULT_BOARD_NAME;
 	board.control = DEFAULT_BOARD_CONTROL;
 	board.recording = DEFAULT_RECORDING;
+	board.isRecurring = DEFAULT_BOARD_RECURRING;
 
 	EnumArray control;
 

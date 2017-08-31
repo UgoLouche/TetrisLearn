@@ -198,7 +198,20 @@ void TetrisGame::panelSetup(const sf::Vector2f anchor, size_t index)
 	// Game
 	// Board
 	sf::Vector2f boardAnchor(anchor.x + PANEL_SMALL_BOX_WIDTH, anchor.y + PANEL_BOX_BORDER);
-	boards.emplace_front(new Board(*scoreCounter, *levelCounter, *gameOverText, *hold, previews, blockPool, *this, boardAnchor, Settings::getBoard(index).recording));
+	boards.emplace_front(
+		new Board(
+			*scoreCounter,
+			*levelCounter,
+			*gameOverText,
+			*hold,
+			previews,
+			blockPool,
+			*this,
+			boardAnchor,
+			Settings::getBoard(index).recording,
+			Settings::getBoard(index).isRecurring
+		)
+	);
 	world.registerElement(LayerType::GameEntity, boards.front() );
 
 	//Controls

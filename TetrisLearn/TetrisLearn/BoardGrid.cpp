@@ -124,3 +124,14 @@ bool BoardGrid::isFree_custom(sf::Vector2i pos) const
 	if (validPos(pos) && content[pos.x][pos.y] == nullptr) return true;
 	else return false;
 }
+
+void BoardGrid::reset_custom()
+{
+	for (int i = 0; i < BOARD_WIDTH; ++i)
+	{
+		for (int j = 0; j < BOARD_HEIGHT; ++j)
+		{
+			content[i][j] = nullptr;
+		}
+	}
+}

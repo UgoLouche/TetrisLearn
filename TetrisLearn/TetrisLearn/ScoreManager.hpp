@@ -11,7 +11,7 @@ public:
 
 private:
 	size_t score = 0;
-	size_t level = 0;
+	size_t level = 1;
 	size_t levelProgress = 0;
 
 	IBoard& parent;
@@ -30,5 +30,6 @@ private:
 
 	// Inherited via IBoardScore
 	virtual size_t simulateScore_custom(size_t lineCleared, size_t level) const override;
+	virtual void reset_custom() override;
 
 };

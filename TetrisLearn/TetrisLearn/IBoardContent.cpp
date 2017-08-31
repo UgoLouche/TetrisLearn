@@ -14,6 +14,11 @@ void IBoardContent::removeRows()
 	removeRows_custom();
 }
 
+void IBoardContent::reset()
+{
+	reset_custom();
+}
+
 Block ** IBoardContent::operator[](int i)
 {
 	return bracket_custom(i);

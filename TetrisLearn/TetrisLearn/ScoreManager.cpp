@@ -56,3 +56,10 @@ size_t ScoreManager::simulateScore_custom(size_t lineCleared, size_t level) cons
 	
 	return scoreOffset;
 }
+
+void ScoreManager::reset_custom()
+{
+	score = 0;
+	level = 0;
+	levelProgress = 0;
+}

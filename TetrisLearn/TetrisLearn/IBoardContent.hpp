@@ -11,6 +11,7 @@ public:
 
 	bool postLockRowChecks(); // Return true if a row is completed
 	void removeRows();
+	void reset();
 
 	//Operator
 	Block** operator[](int i);
@@ -34,4 +35,7 @@ private:
 	virtual bool isFree_custom(sf::Vector2i pos) const = 0;
 	virtual Block* getBlock_custom(sf::Vector2i pos) const = 0;
 	virtual void setBlock_custom(Block* content, sf::Vector2i pos) = 0;
+
+	//Reset
+	virtual void reset_custom() = 0;
 };

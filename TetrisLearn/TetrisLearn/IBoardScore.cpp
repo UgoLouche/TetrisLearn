@@ -23,3 +23,8 @@ size_t IBoardScore::getLevel() const
 {
 	return getLevel_custom();
 }
+
+void IBoardScore::reset()
+{
+	reset_custom();
+}

@@ -13,7 +13,7 @@
 #include "Settings.hpp"
 
 Board::Board(sf::Text& scoreCounter, sf::Text& levelCounter, sf::Text& gameOverText, TetraThumbnail& hold, TetraThumbnail* previews[THUMBNAIL_PREVIEW_NUMBER],
-	IBlocksPool& blockPool, TetrisGame& parent, const sf::Vector2f anchor, bool isRecording) :
+	IBlocksPool& blockPool, TetrisGame& parent, const sf::Vector2f anchor, bool isRecording, bool isRecurring) :
 	parent(parent),
 	state(BoardStates::Play), 
 	tetraminos(*this, blockPool),
@@ -24,7 +24,8 @@ Board::Board(sf::Text& scoreCounter, sf::Text& levelCounter, sf::Text& gameOverT
 	blockPool(blockPool),
 	content(*this),
 	score(*this),
-	isRecording(isRecording)
+	isRecording(isRecording),
+	isRecurring(isRecurring)
 {
 	// Register timers
 	parent.registerTimedEvent(lockTimer);
@@ -189,8 +190,13 @@ void Board::storeBlock_custom(Block * block)
 
 void Board::gameOver_custom()
 {
-	changeState(BoardStates::Over);
-	uiManager.gameOverUI(true);
+	if (!isRecurring)
+	{
+		changeState(BoardStates::Over);
+		uiManager.gameOverUI(true);
+	}
+	else //reboot
+		reset_custom();
 }
 
 std::string Board::getStrInputData_custom(InputKeys overrideInput)
@@ -198,6 +204,14 @@ std::string Board::getStrInputData_custom(InputKeys overrideInput)
 	if (current_move == nullptr) return "";
 
 	return current_move->toString(true, overrideInput);
+}
+
+void Board::reset_custom()
+{
+	changeScoreUI(0);
+	changeLevelUI(1);
+	score.reset();
+	content.reset();
 }
 
 void Board::registerNewInput(Inputs input)

@@ -119,7 +119,7 @@
 		<poolsize>100</poolsize>
 		<texture>BlockTexture.png</texture>
 	</block>
-	
+-->	
 	<score>	
 		<line>
 			<score>1</score>
@@ -128,17 +128,18 @@
 		<level>
 			<multiplier>1</multiplier>
 			<speed>0.1</speed>
-			<line>20</line>
+			<line>2</line>
 		</level>
 	</score>
+<!--
 	
 	<recording>
 		<path>./inputData_save.raw</path>
 		<separator>,</separator>
 	</recording>
-
+-->
 	<boards>
-	
+<!--	
 		<board index="0">
 			<name>Default Board</name>		
 		</board>
@@ -157,12 +158,13 @@
 				</keyboard>
 			</controlscheme>
 		</board>
-		
+-->		
 		<board>
 			<name>default</name>
 			<recording />
+			<recurring />
 		</board>
-		
+<!--		
 		<board>
 			<name>Learning</name>
 			<controlscheme>
@@ -182,7 +184,6 @@
 				</keyboard>
 			</controlscheme>
 		</board>
-		
+-->		
 	</boards>
--->
 </game>

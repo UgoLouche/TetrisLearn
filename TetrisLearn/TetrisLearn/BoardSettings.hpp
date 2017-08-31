@@ -13,10 +13,10 @@ struct BoardSettings
 {
 public:
 	InputMethod control;
-	std::string name;
+	std::string name = "";
 
-	bool recording;
-	bool autoReload;
+	bool recording = false;
+	bool isRecurring = false;
 
 	//Constr / Destr because of union.
 	BoardSettings();

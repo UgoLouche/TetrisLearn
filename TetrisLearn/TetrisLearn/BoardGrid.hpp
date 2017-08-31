@@ -12,6 +12,7 @@ class BoardGrid : public IBoardContent
 public:
 	BoardGrid(IBoard& parent);
 
+
 private:
 	Block* content[BOARD_WIDTH][BOARD_HEIGHT]; //Origin is bottom left corner.
 
@@ -29,6 +30,8 @@ private:
 	virtual Block * getBlock_custom(sf::Vector2i pos) const override;
 	virtual void setBlock_custom(Block * content, sf::Vector2i pos) override;
 	virtual bool isFree_custom(sf::Vector2i pos) const override;
+
+	virtual void reset_custom() override;
 
 	// Ad-hoc
 	bool checkRow(int index);

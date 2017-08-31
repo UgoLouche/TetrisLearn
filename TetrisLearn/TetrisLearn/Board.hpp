@@ -25,7 +25,7 @@ class Board : public IBoard
 {
 public:
 	Board(sf::Text& scoreCounter, sf::Text& levelCounter, sf::Text& gameOverText, TetraThumbnail& hold, TetraThumbnail* previews[THUMBNAIL_PREVIEW_NUMBER],
-		IBlocksPool& blockPool, TetrisGame& parent, const sf::Vector2f anchor, bool isRecording);
+		IBlocksPool& blockPool, TetrisGame& parent, const sf::Vector2f anchor, bool isRecording, bool isRecurring);
 
 private:
 
@@ -61,6 +61,9 @@ private:
 	std::shared_ptr<InputData> current_move = nullptr;
 	bool isRecording;
 
+	//GameOver behavior
+	bool isRecurring;
+
 	// Inherited via IBoard
 	virtual void act_custom() override;
 	virtual void draw(sf::RenderTarget & target, sf::RenderStates states) const override;
@@ -92,6 +95,8 @@ private:
 	virtual void gameOver_custom() override;
 
 	virtual std::string getStrInputData_custom(InputKeys overrideInput) override;
+
+	virtual void reset_custom() override;
 
 	//Add-hoc
 	void registerNewInput(Inputs input);
