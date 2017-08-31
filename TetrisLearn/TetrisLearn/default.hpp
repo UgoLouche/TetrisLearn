@@ -37,6 +37,9 @@
 #define DEFAULT_HOLD_TEXT                "Hold"
 #define DEFAULT_PREVIEW_TEXT             "Previews"
 
+//Board Name
+#define DEFAULT_BOARDNAME_FONTSIZE   25
+
 // Font.
 #define DEFAULT_FONT_SIZE      25
 #define DEFAULT_FONT_FILE      "arial.ttf"

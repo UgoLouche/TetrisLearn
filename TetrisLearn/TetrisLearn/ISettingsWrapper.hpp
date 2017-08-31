@@ -42,6 +42,9 @@ typedef struct GeneralSettings
 			              
 	int                     thumbnails_fontSize;
 
+	//Board Name 
+	int                     boardName_fontSize; //TODO generate default for that
+
 	//Font
 	std::string             fontPath;
 	int                     fontSize;

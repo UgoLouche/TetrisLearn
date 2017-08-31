@@ -184,6 +184,16 @@ void TetrisGame::panelSetup(const sf::Vector2f anchor, size_t index)
 		world.registerElement(LayerType::GameUI, previews[i]);
 	}
 
+	//Board Name
+	sf::Text* nameText = new sf::Text();
+	textSetup(
+		nameText,
+		LayerType::GameUI,
+		Settings::get().boardName_fontSize,
+		Settings::getBoard(index).name,
+		anchor + sf::Vector2f(BOARDNAME_ANCHOR_X, BOARDNAME_ANCHOR_Y)
+	);
+
 
 	// Game
 	// Board

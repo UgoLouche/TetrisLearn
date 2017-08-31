@@ -43,7 +43,7 @@
 #define LEVEL_COUNTER_POS_Y  125
 
 #define GAMEOVER_TEXT_POS_X  20
-#define GAMEOVER_TEXT_POS_Y  175
+#define GAMEOVER_TEXT_POS_Y  200
 
 
 // Log Texts.
@@ -83,6 +83,9 @@
 #define PREVIEW_ANCHOR_Y         240.0f
 #define PREVIEW_OFFSET           80.0f
 
+//Board Name
+#define BOARDNAME_ANCHOR_X       20.0f
+#define BOARDNAME_ANCHOR_Y       170.0f
 
 // InputData
 #define FLUSH_TIMER 100

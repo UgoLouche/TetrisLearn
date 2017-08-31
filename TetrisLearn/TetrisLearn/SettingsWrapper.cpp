@@ -66,6 +66,8 @@ bool SettingsWrapper::loadDefault()
 
 	settings.thumbnails_fontSize = DEFAULT_THUMBNAIL_FONT_SIZE;
 
+	settings.boardName_fontSize = DEFAULT_BOARDNAME_FONTSIZE;
+
 	settings.fontPath = DEFAULT_FONT_FILE;
 	settings.fontSize = DEFAULT_FONT_SIZE;
 
