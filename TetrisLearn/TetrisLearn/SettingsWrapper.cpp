@@ -249,6 +249,22 @@ bool SettingsWrapper::parseGame(const pugi::xml_node & gameNode)
 			ret = ret && parseScore(*it);
 		}
 
+		//<recording>
+		else if (strcmp(it->name(), MARKUP_RECORDING) == 0)
+		{
+			for (auto inner = it->begin(); inner != it->end(); ++inner)
+			{
+				if (strcmp(inner->name(), MARKUP_PATH) == 0)
+				{
+					settings.save_path = parsePath(*inner, settings.save_path);
+				}
+				else if (strcmp(inner->name(), MARKUP_SEPARATOR) == 0)
+				{
+					settings.value_separator = parseChar(*inner, settings.value_separator);
+				}
+			}
+		}
+
 		//<boards>
 		else if (strcmp(it->name(), MARKUP_BOARDS) == 0)
 		{
@@ -469,7 +485,14 @@ BoardSettings * SettingsWrapper::allocateCustomBoard(const pugi::xml_node & boar
 			for (auto inner = it->begin(); inner != it->end(); ++inner)
 			{
 				if (strcmp(inner->name(), MARKUP_AI) == 0) {/*Not implemented yet*/}
-				else if (strcmp(inner->name(), MARKUP_LEARNING) == 0) {/*Not implemented yet*/ }  //TODO AI part here
+				else if (strcmp(inner->name(), MARKUP_LEARNING) == 0) 
+				{
+					if (!parseLearning(*inner, *ret))
+					{
+						delete ret;
+						return nullptr;
+					}
+				}
 				else if (strcmp(inner->name(), MARKUP_KEYBOARD) == 0)
 				{
 					if (!parseKeyboard(*inner, *ret))
@@ -899,4 +922,9 @@ sf::Vector2f SettingsWrapper::parseVector(const pugi::xml_node & node, const sf:
 sf::Vector2i SettingsWrapper::parseVector(const pugi::xml_node & node, const sf::Vector2i & defaultValue) const
 {
 	return static_cast<sf::Vector2i>(parseVector(node, static_cast<sf::Vector2f>(defaultValue)));
+}
+
+char SettingsWrapper::parseChar(const pugi::xml_node & node, const char defaultValue) const
+{
+	return parseString(node, "" + defaultValue).at(0);
 }

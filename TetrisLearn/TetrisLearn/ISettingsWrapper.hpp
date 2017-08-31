@@ -43,7 +43,7 @@ typedef struct GeneralSettings
 	int                     thumbnails_fontSize;
 
 	//Board Name 
-	int                     boardName_fontSize; //TODO generate default for that
+	int                     boardName_fontSize;
 
 	//Font
 	std::string             fontPath;
@@ -76,8 +76,6 @@ typedef struct GeneralSettings
 	float                   linesToLevelup;
 
 	//File Recording
-	//Not yet implemented
-	//TODO implement this for config file
 	char                   value_separator;
 	std::string            save_path;
 

@@ -131,6 +131,11 @@
 			<line>20</line>
 		</level>
 	</score>
+	
+	<recording>
+		<path>./inputData_save.raw</path>
+		<separator>,</separator>
+	</recording>
 
 	<boards>
 	

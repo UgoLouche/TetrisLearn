@@ -55,6 +55,7 @@
 #define MARKUP_BLUE         "blue"
 #define MARKUP_ALPHA        "alpha"
 #define MARKUP_PATH         "path"
+#define MARKUP_SEPARATOR    "separator"
 
 #define ATTR_ID          "id"
 #define ATTR_ID_A        "A"

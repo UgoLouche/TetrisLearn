@@ -70,6 +70,7 @@ private:
 	sf::Color         parseColor  (const pugi::xml_node& node, const sf::Color&         defaultValue) const;
 	sf::Vector2f      parseVector (const pugi::xml_node& node, const sf::Vector2f&      defaultValue) const;
 	sf::Vector2i      parseVector (const pugi::xml_node& node, const sf::Vector2i&      defaultValue) const;
+	char              parseChar   (const pugi::xml_node& node, const char               defaultValue) const;
 
 
 	//Misc
