@@ -5,12 +5,10 @@ Created on Mon Aug 21 16:36:10 2017
 @author: Ugo
 """
 
-import ExampleRegressor as er #DataSelector and LabelParser are useful :)
 import time
-import numpy as np
+import ToolBox as tb
 
 from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn.utils import shuffle
 from sklearn.svm import SVC, NuSVC
 
 class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
@@ -19,15 +17,18 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
     ID = 0
     
     def __init__(self,
-                 ds = er.DataSelector(),
-                 clf = SVC(),
+                 ds = tb.DataSelector(),
+                 lp = tb.LabelParser(mode="multiClass"),
+                 clf = NuSVC(),
                  file = "./ExClf.out",
                  instanceID = 0):
         
+
         self.instanceID = ExampleMimicClassifier.ID
         ExampleMimicClassifier.ID = ExampleMimicClassifier.ID + 1
-        
+ 
         self.ds = ds
+        self.lp = lp
         self.clf = clf
         self.file="./ExClf{}.out".format(self.ID)
         
@@ -54,6 +55,19 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
     
         return self
     
+    def score(self, X, Y):
+        tProcess = time.time()
+        [Xtr, Ytr] = self.transform(self.ds.transform(X))
+        tProcess = time.time() - tProcess
+        
+        tScore = time.time()
+        score = self.clf.score(Xtr, Ytr)
+        tScore = time.time() - tScore
+        
+        self.log("Example Regressor #{}: Process time: {}, score time: {}, acc: {}\n".format(self.ID,tProcess, tScore, score))
+        
+        return score
+    
     
     def predict(self, X):
         
@@ -68,23 +82,8 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
         out.close()
         
     
-    def transform(self, X): #Feed data, return data with label 1 and every other input possible with label 0
-        retX = np.zeros((X.shape[0] * 7, X.shape[1]))
-        retY = np.zeros((X.shape[0] * 7)) - 1
-        
-        inputValues = X[:, 235:242]        
-        for i in range(7):
-            retX[i*X.shape[0]:(i+1)*X.shape[0], 0:235] = X[:,0:235]
-            retX[i*X.shape[0]:(i+1)*X.shape[0], 235:242] = inputValues
-            retX[i*X.shape[0]:(i+1)*X.shape[0], 242:] = X[:, 242:]
-            
-            inputValues = np.concatenate((inputValues[:, 1:], inputValues[:,0:1]), axis=1)
-        
-        retY[0:X.shape[0]] = 1
-        
-        retX, retY = shuffle(retX, retY)
-        
-        return [retX, retY]
+    def transform(self, X):
+        return self.lp.transform(X)
             
       
 #  //Current Tetra 0-6

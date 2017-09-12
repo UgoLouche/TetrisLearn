@@ -220,3 +220,11 @@ Reading file
 File read 
 Example Regressor #1: fit time: 0.0010001659393310547, score time: 0.002000093460083008, acc: 1.0
 Example Regressor #1: predict call with result: [ 0.]
+Example Regressor #1:  created at time 1505230128.2883792
+Reading file 
+File read 
+Example Regressor #1: fit time: 3.1581804752349854, score time: 1.8921082019805908, acc: 0.03214412905445452
+Reading file 
+File read 
+Example Regressor #1: fit time: 3.102177381515503, score time: 1.8851079940795898, acc: 0.0321233393492496
+Example Regressor #1: predict call with result: [ 0.03031629]

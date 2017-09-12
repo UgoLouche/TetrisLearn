@@ -159,7 +159,7 @@ class Data:
     
     #IDs are a mess and need to be cleaned up to avoid duplicate
     #Working (reasonable) hypothesis is: maintain map Table for new ID. 
-    #Parent should always first.
+    #Parents should always appear first.
     def cleanupIDs(self):
         mapTable = np.zeros(self.innerData.shape[0] + 1) - 1
         nextID = 1
