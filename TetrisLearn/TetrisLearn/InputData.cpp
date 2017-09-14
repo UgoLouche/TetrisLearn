@@ -25,13 +25,14 @@ void InputData::setFileStream(std::ofstream * file)
 // For now copy all data, as this should avoid inconsistencies (i.e when move result in line supression, the board may change between instance creation
 // and it destruction).
 // If this is too much on CPU, you may want to only keep references to the board and expand on that only when written to file.
-InputData::InputData(ITetraminoManager & tetraManager, IBoardContent& content, Inputs input, size_t previousID) :
+InputData::InputData(ITetraminoManager & tetraManager, IBoardContent& content, Inputs input, size_t previousID, bool isRecording) :
 	currentTetra(tetraManager.current()->getType()),
 	hold(tetraManager.getHoldType()),
 	isHoldEmpty( !tetraManager.isHolding()),
 	phase(tetraManager.current()->getPhase()),
 	ID(nextID++),
-	previousID(previousID)
+	previousID(previousID),
+	isRecording(isRecording)
 {
 	for (int i = 0; i < THUMBNAIL_PREVIEW_NUMBER; ++i) thumbnails[i] = tetraManager.getNextType(i);
 
@@ -95,7 +96,7 @@ InputData::InputData(ITetraminoManager & tetraManager, IBoardContent& content, I
 // Actually, copy constructor is deleted
 InputData::~InputData()
 {
-	if (fileStream != nullptr && fileStream->is_open())
+	if (fileStream != nullptr && fileStream->is_open() && isRecording)
 	{
 		*fileStream << toString() + "\n";
 

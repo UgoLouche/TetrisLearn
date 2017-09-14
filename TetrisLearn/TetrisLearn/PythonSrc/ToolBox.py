@@ -82,17 +82,21 @@ class DataSelector(BaseEstimator, TransformerMixin):
         
         #Board content
         skp.normalize(X[:, 35:235], copy=False)
+        #pseudo-normalization
+        #X[:, 35:235] = X[:, 35:235]/200 
         
         #input
         skp.normalize(X[:, 235:242], copy=False)
         
         #curr_coord
+        #pseudo-normalization
+        #X[:,242:250] = X[:,242:250] / 20
         skp.normalize(X[:, 242:244], copy=False)
         skp.normalize(X[:, 244:246], copy=False)
         skp.normalize(X[:, 246:248], copy=False)
         skp.normalize(X[:, 248:250], copy=False)
         
-        skp.normalize(X[:, 242:250], copy=False)
+        #skp.normalize(X[:, 242:250], copy=False)
         
         #Phase
         skp.normalize(X[:, 258:262], copy=False)

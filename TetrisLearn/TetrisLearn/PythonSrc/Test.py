@@ -20,19 +20,19 @@ if __name__=="__main__":
     filePath = "../inputData_save_ManualPlay.raw"
     
     #Estimators
-    est_emc = emc.ExampleMimicClassifier(lp=tb.LabelParser(mode="multiClass"))
+    est_emc = emc.ExampleMimicClassifier()
     est_NuSVC = NuSVC()
     
     #Parameters
     p1 = { 
               'kernel' : ['rbf'],
-              'gamma'  : [1e-05],
-              'nu'     : np.arange(0.001, 1, 5),
+              'gamma'  : np.logspace(0,4,25),
+              'nu'     : np.arange(1e-5, 0.001, 25),
               'shrinking' : [True, False]
          }
     
     #CV
-    grid = GridSearchCV(est_NuSVC, p1, n_jobs=6, cv=10, error_score=-1e100)
+    grid = GridSearchCV(est_NuSVC, p1, n_jobs=4, cv=3, error_score=-1e100)
     
     
     #Fitting
@@ -40,3 +40,5 @@ if __name__=="__main__":
     [X, Y] = est_emc.transform(d.getData())
     
     grid.fit(X, Y)
+    print(grid.best_score_)
+    print(grid.best_params_)

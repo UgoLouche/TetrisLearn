@@ -7,28 +7,27 @@ Created on Mon Aug 21 16:36:10 2017
 
 import time
 import ToolBox as tb
+import pickle as pi
 
-from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.base import BaseEstimator, ClassifierMixin, TransformerMixin
 from sklearn.svm import SVC, NuSVC
 
-class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
+class ExampleMimicClassifier(BaseEstimator, ClassifierMixin, ):
     
      #Static
     ID = 0
     
     def __init__(self,
-                 ds = tb.DataSelector(),
-                 lp = tb.LabelParser(mode="multiClass"),
-                 clf = NuSVC(),
-                 file = "./ExClf.out",
-                 instanceID = 0):
+                 #clf = NuSVC(),
+                 clf = pi.load(open("./PythonSrc/preTrainSVM.pick", "rb")),
+                 ):
         
 
         self.instanceID = ExampleMimicClassifier.ID
         ExampleMimicClassifier.ID = ExampleMimicClassifier.ID + 1
  
-        self.ds = ds
-        self.lp = lp
+        self.ds = tb.DataSelector(input_type=False)
+        self.lp = tb.LabelParser(mode="multiClass")
         self.clf = clf
         self.file="./ExClf{}.out".format(self.ID)
         
@@ -40,7 +39,7 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
     def fit(self, X, Y):
 
         tProcess = time.time()
-        [Xtr, Ytr] = self.transform(self.ds.transform(X))
+        [Xtr, Ytr] = self.transform(X)
         tProcess = time.time() - tProcess
         
         tFit = time.time()  
@@ -51,28 +50,36 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
         score = self.clf.score(Xtr, Ytr)
         tScore = time.time() - tScore
         
-        self.log("Example Regressor #{}: Process time: {}, fit time: {}, score time: {}, acc: {}\n".format(self.ID,tProcess, tFit, tScore, score))
+        self.log("Example classifier #{}: Process time: {}, fit time: {}, score time: {}, acc: {}\n".format(self.ID,tProcess, tFit, tScore, score))
     
         return self
     
     def score(self, X, Y):
         tProcess = time.time()
-        [Xtr, Ytr] = self.transform(self.ds.transform(X))
+        [Xtr, Ytr] = self.transform(X)
         tProcess = time.time() - tProcess
         
         tScore = time.time()
         score = self.clf.score(Xtr, Ytr)
         tScore = time.time() - tScore
         
-        self.log("Example Regressor #{}: Process time: {}, score time: {}, acc: {}\n".format(self.ID,tProcess, tScore, score))
+        self.log("Example classifier #{}: Process time: {}, score time: {}, acc: {}\n".format(self.ID,tProcess, tScore, score))
         
         return score
     
     
     def predict(self, X):
         
-        ret = self.clf.predict( (self.transform(self.ds.transform(X)))[0] )
-        self.log("Example Regressor #{}: predict call with result: {}\n".format(self.ID, ret))
+        [Xpred, Yproposed] = self.transform(X)
+        pred = self.clf.predict( Xpred )
+                 
+        #return 0 if the input part of X doesn't match the predicted class, 1 otherwise.
+        if pred == Yproposed:
+            ret = 1
+        else:
+            ret = 0
+        
+        self.log("Example classifier #{}: predict call with result: {}\n".format(self.ID, ret))
         
         return ret
     
@@ -83,7 +90,10 @@ class ExampleMimicClassifier(BaseEstimator, ClassifierMixin):
         
     
     def transform(self, X):
-        return self.lp.transform(X)
+        [retX, retY] = self.lp.transform(X)
+        retX = self.ds.transform(retX)
+        
+        return [retX, retY]
             
       
 #  //Current Tetra 0-6
@@ -107,10 +117,15 @@ if __name__ == '__main__':
     d = w.Data()
     d.loadDataFromFile("../inputData_save.raw")
     
+    clf = w.getWrapper("ExampleMimicClassifier")
+    clf.fit(d.getData())
     
-    clf = ExampleMimicClassifier()
+    score = clf.predictFromStr("0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,5,18,6,18,6,19,4,18,5,17,6,17,6,18,4,17,1,0,0,0,0,0,2,3")
     
-    clf.fit(d.getData(), 0)
+    
+    #clf = ExampleMimicClassifier()
+    
+    #clf.fit(d.getData(), 0)
     
     
 #    

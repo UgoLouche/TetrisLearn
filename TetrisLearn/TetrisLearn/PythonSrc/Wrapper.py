@@ -64,16 +64,18 @@ class Wrapper(BaseEstimator, RegressorMixin):
            self.lineRead = 0
            self.lastFileRead = fileName
             
-            
-        self.wrapped_future.log("Reading file \n")
+        #self.wrapped_future.log("Reading file \n")
         
         self.lineRead = self.lineRead  + self.persData.loadDataFromFile(fileName, skiprows=self.lineRead)
         
-        self.wrapped_future.log("File read \n")
+        #self.wrapped_future.log("File read \n")
         
         # If that doesn't return anything, the C++ side of the call will raise an exception
         # regarding thread state (tstate) when shutting down the interpreter. Go figure.
         # -- That issue might have been fixed. Leaving it here in case it's not.
+        
+        #TEST PLEASE REMOVE
+        self.fitted = True;
         
         #Ignore call if no data are loaded yet.
         X = self.persData.getData()

@@ -216,12 +216,9 @@ void Board::reset_custom()
 
 void Board::registerNewInput(Inputs input)
 {
-	if (isRecording)
-	{
-		size_t prevID = current_move == nullptr ? 0 : current_move->getID();
+	size_t prevID = current_move == nullptr ? 0 : current_move->getID();
 
-		current_move = std::make_shared<InputData>(tetraminos, content, input, prevID);
-	}
+	current_move = std::make_shared<InputData>(tetraminos, content, input, prevID, isRecording);
 }
 
 void Board::recordNewPosition()

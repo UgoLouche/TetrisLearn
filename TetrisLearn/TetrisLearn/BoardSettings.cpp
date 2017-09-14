@@ -24,6 +24,31 @@ BoardSettings::~BoardSettings()
 	deleteUnion();
 }
 
+const InputMethod BoardSettings::getInputMethod() const
+{
+	return control;
+}
+
+void BoardSettings::setInputMethod(InputMethod control)
+{
+	if (this->control != control)
+	{
+		switch (control)
+		{
+		case InputMethod::Player:
+			setUnion<EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>>(EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>());
+			break;
+		case InputMethod::Learning:
+			setUnion<std::string>("");
+			break;
+		case InputMethod::Static_AI:
+		default:
+			throw new std::exception("Unsuported control scheme");
+			break;
+		}
+	}
+}
+
 void BoardSettings::deleteUnion()
 {
 	switch (control)

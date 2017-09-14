@@ -60,7 +60,7 @@
 		<size>25</size>
 		<file>arial.ttf</file>
 	</font>
-	
+-->	
 	<rules>
 		<delays>
 			<lock>1000</lock>
@@ -72,7 +72,7 @@
 			<steptoenable>3</steptoenable>
 		</DAS>
 	</rules>
-	
+<!--	
 	<visual>
 		<flash>
 			<timer>100</timer>
@@ -163,9 +163,13 @@
 		</board>
 -->		
 		<board>
-			<name>default</name>
-			<recording />
+			<name>preTrain SVM</name>
 			<recurring />
+			<controlscheme>
+				<learning>
+					<path>ExampleMimicClassifier</path>
+				</learning>
+			</controlscheme>
 		</board>
 <!--		
 		<board>

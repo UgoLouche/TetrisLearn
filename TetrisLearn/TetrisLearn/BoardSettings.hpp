@@ -12,7 +12,6 @@
 struct BoardSettings
 {
 public:
-	InputMethod control;
 	std::string name = "";
 
 	bool recording = false;
@@ -37,12 +36,17 @@ public:
 	BoardSettings(const BoardSettings& cpy) = delete;
 	BoardSettings& operator=(const BoardSettings& cpy) = delete;
 
+	const InputMethod getInputMethod() const;
+	void setInputMethod(InputMethod control);
+
 private:
 	union
 	{
 		EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS> mapping;
 		std::string fileName;
 	};
+
+	InputMethod control;
 
 	void deleteUnion();
 
@@ -87,7 +91,8 @@ inline void BoardSettings::setUnion<EnumeratedArray<sf::Keyboard::Key, InputKeys
 
 	if (control != InputMethod::Player) control = InputMethod::Player;
 
-	this->mapping = newVal;
+	new(&(this->mapping)) EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>(newVal);
+	//this->mapping = newVal;
 }
 
 template<>
@@ -97,5 +102,6 @@ inline void BoardSettings::setUnion<std::string>(std::string newVal)
 
 	if (control != InputMethod::Learning) control = InputMethod::Learning;
 
-	this->fileName = newVal;
+	new(&(this->mapping)) std::string(newVal);
+	//this->fileName = newVal;
 }

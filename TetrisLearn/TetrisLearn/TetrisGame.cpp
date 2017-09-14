@@ -216,7 +216,7 @@ void TetrisGame::panelSetup(const sf::Vector2f anchor, size_t index)
 
 	//Controls
 	LearningController* controller = nullptr;
-	switch (Settings::getBoard(index).control)
+	switch (Settings::getBoard(index).getInputMethod())
 	{
 	case InputMethod::Player:
 	{

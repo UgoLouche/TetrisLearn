@@ -344,21 +344,24 @@ bool SettingsWrapper::parseRules(const pugi::xml_node & rulesNode)
 		{
 			for (auto inner = it->begin(); inner != it->end(); ++inner)
 			{
-				if (strcmp(it->name(), MARKUP_LOCK) == 0)
+				if (strcmp(inner->name(), MARKUP_LOCK) == 0)
 					settings.lockTime = parseLock(*inner, settings.lockTime);
-				else if (strcmp(it->name(), MARKUP_AUTOSCROLL) == 0)
+				else if (strcmp(inner->name(), MARKUP_AUTOSCROLL) == 0)
 					settings.autoscollTime = parseAutoScroll(*inner, settings.autoscollTime);
-				else if (strcmp(it->name(), MARKUP_FLASH) == 0)
+				else if (strcmp(inner->name(), MARKUP_FLASH) == 0)
 					settings.flashTime = parseFlash(*inner, settings.flashTime);
 			}
 		}
 
 		else if (strcmp(it->name(), MARKUP_DAS) == 0)
 		{
-			if (strcmp(it->name(), MARKUP_TIMER) == 0)
-				settings.DASTimer = parseTimer(*it, settings.DASTimer);
-			else if (strcmp(it->name(), MARKUP_STEPTOENABLE) == 0)
-				settings.stepToDAS = parseStepToEnable(*it, settings.stepToDAS);
+			for (auto inner = it->begin(); inner != it->end(); ++inner)
+			{
+				if (strcmp(inner->name(), MARKUP_TIMER) == 0)
+					settings.DASTimer = parseTimer(*inner, settings.DASTimer);
+				else if (strcmp(inner->name(), MARKUP_STEPTOENABLE) == 0)
+					settings.stepToDAS = parseStepToEnable(*inner, settings.stepToDAS);
+			}
 		}
 	}
 
@@ -524,7 +527,7 @@ void SettingsWrapper::resetBoard(BoardSettings & board)
 	using EnumArray = EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>;
 
 	board.name = DEFAULT_BOARD_NAME;
-	board.control = DEFAULT_BOARD_CONTROL;
+	board.setInputMethod(DEFAULT_BOARD_CONTROL);
 	board.recording = DEFAULT_RECORDING;
 	board.isRecurring = DEFAULT_BOARD_RECURRING;
 
@@ -545,7 +548,7 @@ bool SettingsWrapper::parseKeyboard(const pugi::xml_node& keyboardNode, BoardSet
 {
 	using EnumArray = EnumeratedArray<sf::Keyboard::Key, InputKeys, TOTAL_KEYS>;
 
-	board.control = InputMethod::Player;
+	board.setInputMethod(InputMethod::Player);
 
 	for (auto it = keyboardNode.begin(); it != keyboardNode.end(); ++it)
 	{
@@ -579,7 +582,7 @@ bool SettingsWrapper::parseKeyboard(const pugi::xml_node& keyboardNode, BoardSet
 
 bool SettingsWrapper::parseLearning(const pugi::xml_node & learningNode, BoardSettings & board)
 {
-	board.control = InputMethod::Learning;
+	board.setInputMethod(InputMethod::Learning);
 
 	for (auto it = learningNode.begin(); it != learningNode.end(); ++it)
 	{

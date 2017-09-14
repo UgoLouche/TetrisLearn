@@ -23,7 +23,8 @@ public:
 		ITetraminoManager& tetraManager,
 		IBoardContent& content,
 		Inputs input,
-		size_t previousID
+		size_t previousID,
+		bool isRecording
 		);
 
 	//Prevent copy
@@ -42,6 +43,9 @@ public:
 	size_t getID() const;
 
 private:
+	//Delte behaviour
+	bool isRecording;
+
 	// Static
 	// init at 1, 0 is reserved for no predecessor.
 	static size_t nextID;
